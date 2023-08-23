@@ -1,9 +1,203 @@
 <!--#set var="title" value="Главная" -->
 <!--#include virtual="/parts/header.html" -->
 
-<div class="">
-
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-xl-6 col-lg-8">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__steps">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__steps__current text-nowrap">1 этап</div>
+                        <div class="application-stages__steps__line">
+                            <svg width="251" height="6">
+                                <use xlink:href="#svg-step-line"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__steps__total text-nowrap">2 - 10 этапы</div>
+                        <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-info"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Создание заявки</h1>
+                        <span class="btn btn-outline-danger btn-sm">Черновик</span>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center application-stages__progress">
+                        <div class="application-stages__progress__label">
+                            До завершения процесса
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-success btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">10 этапов
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">9 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">8 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">7 этапов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+        <div class="card-body">
+            <form action="" class="dashboard__card__form">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 ">
+                        <div class="input-field">
+                            <input id="order" type="text" class="input-field__text" placeholder="№ заявки">
+                            <label for="order" class="input-field__label">№ заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Откуда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_from" type="text" class="input-field__text" placeholder="Страна откуда">
+                            <label for="country_from" class="input-field__label">Страна откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_from" type="text" class="input-field__text" placeholder="Валюта откуда">
+                            <label for="currency_from" class="input-field__label">Валюта откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_from" type="text" class="input-field__text" placeholder="Сумма откуда">
+                            <label for="amount_from" class="input-field__label">Сумма откуда</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 offset-xl-1 offset-0">
+                        <div class="input-field">
+                            <input id="date_order" type="text" class="input-field__text input-field__text--date"
+                                   placeholder="Дата  заявки">
+                            <label for="date_order" class="input-field__label">Дата заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Куда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_to" type="text" class="input-field__text" placeholder="Страна куда"
+                                   value="Россия">
+                            <label for="country_to" class="input-field__label">Страна куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_to" type="text" class="input-field__text" placeholder="Валюта куда"
+                                   value="Доллары (USD)">
+                            <label for="currency_to" class="input-field__label">Валюта куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_to" type="text" class="input-field__text" placeholder="Сумма  куда"
+                                   value="10 000">
+                            <label for="amount_to" class="input-field__label">Сумма куда</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 offset-xl-1 offset-0">
+                        <div class="dashboard__balance">
+                            <div class="d-flex align-items-center dashboard__balance__header">
+                                <div class="d-flex align-items-center dashboard__balance__title">
+                                    Текущий баланс
+                                    <button class="btn-info ms-2"
+                                            data-bs-trigger="hover focus"
+                                            data-bs-container="body"
+                                            data-bs-toggle="popover"
+                                            data-bs-placement="top"
+                                            data-bs-content="Top popover">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#svg-info"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="" class="btn ms-auto btn-light d-inline-flex align-items-center">
+                                    ПОДРОБНЕЕ
+                                    <svg width="31" height="6" class="ms-2">
+                                        <use xlink:href="#svg-line-btn"></use>
+                                    </svg>
+                                </a>
+                            </div>
 
+                            <div class="dashboard__balance__table">
+                                <table class="table table-borderless">
+                                    <thead>
+                                    <tr>
+                                        <th>Валюта</th>
+                                        <th>Ожидаемые</th>
+                                        <th>Доступно</th>
+                                        <th>В работе</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Доллары (USD)</td>
+                                        <td class="dashboard__balance__value">250.000 $</td>
+                                        <td class="dashboard__balance__value">50.000 $</td>
+                                        <td class="dashboard__balance__value">0 $</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Евро (EUR)</td>
+                                        <td class="dashboard__balance__value">30.000 €</td>
+                                        <td class="dashboard__balance__value">40.000 €</td>
+                                        <td class="dashboard__balance__value">10.000 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Рубли (RUB)</td>
+                                        <td class="dashboard__balance__value">20.000 ₽</td>
+                                        <td class="dashboard__balance__value">50.000 ₽</td>
+                                        <td class="dashboard__balance__value">10.000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Tether (USDT)</td>
+                                        <td class="dashboard__balance__value">1.012 ₮</td>
+                                        <td class="dashboard__balance__value">2.0120 ₮</td>
+                                        <td class="dashboard__balance__value">0.01 ₮</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="" class="dashboard__balance__table-more">
+                                <span>показать все</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 <!--#include virtual="/parts/footer.html" -->

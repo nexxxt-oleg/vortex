@@ -194,6 +194,204 @@
 
 
 
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-xl-6 col-lg-8">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__steps">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__steps__current text-nowrap">1 этап</div>
+                        <div class="application-stages__steps__line">
+                            <svg width="251" height="6">
+                                <use xlink:href="#svg-step-line"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__steps__total text-nowrap">2 - 10 этапы</div>
+                        <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-info"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Создание заявки</h1>
+                        <span class="btn btn-outline-danger btn-sm">Черновик</span>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center application-stages__progress">
+                        <div class="application-stages__progress__label">
+                            До завершения процесса
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-success btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">10 этапов
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">9 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">8 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">7 этапов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+        <div class="card-body">
+            <form action="" class="dashboard__card__form">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 ">
+                        <div class="input-field">
+                            <input id="order" type="text" class="input-field__text" placeholder="№ заявки">
+                            <label for="order" class="input-field__label">№ заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Откуда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_from" type="text" class="input-field__text" placeholder="Страна откуда">
+                            <label for="country_from" class="input-field__label">Страна откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_from" type="text" class="input-field__text" placeholder="Валюта откуда">
+                            <label for="currency_from" class="input-field__label">Валюта откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_from" type="text" class="input-field__text" placeholder="Сумма откуда">
+                            <label for="amount_from" class="input-field__label">Сумма откуда</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 offset-xl-1 offset-0">
+                        <div class="input-field">
+                            <input id="date_order" type="text" class="input-field__text input-field__text--date"
+                                   placeholder="Дата  заявки">
+                            <label for="date_order" class="input-field__label">Дата заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Куда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_to" type="text" class="input-field__text" placeholder="Страна куда"
+                                   value="Россия">
+                            <label for="country_to" class="input-field__label">Страна куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_to" type="text" class="input-field__text" placeholder="Валюта куда"
+                                   value="Доллары (USD)">
+                            <label for="currency_to" class="input-field__label">Валюта куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_to" type="text" class="input-field__text" placeholder="Сумма  куда"
+                                   value="10 000">
+                            <label for="amount_to" class="input-field__label">Сумма куда</label>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 offset-xl-1 offset-0">
+                        <div class="dashboard__balance">
+                            <div class="d-flex align-items-center dashboard__balance__header">
+                                <div class="d-flex align-items-center dashboard__balance__title">
+                                    Текущий баланс
+                                    <button class="btn-info ms-2"
+                                            data-bs-trigger="hover focus"
+                                            data-bs-container="body"
+                                            data-bs-toggle="popover"
+                                            data-bs-placement="top"
+                                            data-bs-content="Top popover">
+                                        <svg width="20" height="20">
+                                            <use xlink:href="#svg-info"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <a href="" class="btn ms-auto btn-light d-inline-flex align-items-center">
+                                    ПОДРОБНЕЕ
+                                    <svg width="31" height="6" class="ms-2">
+                                        <use xlink:href="#svg-line-btn"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="dashboard__balance__table">
+                                <table class="table table-borderless">
+                                    <thead>
+                                    <tr>
+                                        <th>Валюта</th>
+                                        <th>Ожидаемые</th>
+                                        <th>Доступно</th>
+                                        <th>В работе</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Доллары (USD)</td>
+                                        <td class="dashboard__balance__value">250.000 $</td>
+                                        <td class="dashboard__balance__value">50.000 $</td>
+                                        <td class="dashboard__balance__value">0 $</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Евро (EUR)</td>
+                                        <td class="dashboard__balance__value">30.000 €</td>
+                                        <td class="dashboard__balance__value">40.000 €</td>
+                                        <td class="dashboard__balance__value">10.000 €</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Рубли (RUB)</td>
+                                        <td class="dashboard__balance__value">20.000 ₽</td>
+                                        <td class="dashboard__balance__value">50.000 ₽</td>
+                                        <td class="dashboard__balance__value">10.000 ₽</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="dashboard__balance__currency">Tether (USDT)</td>
+                                        <td class="dashboard__balance__value">1.012 ₮</td>
+                                        <td class="dashboard__balance__value">2.0120 ₮</td>
+                                        <td class="dashboard__balance__value">0.01 ₮</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <a href="" class="dashboard__balance__table-more">
+                                <span>показать все</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
         </div> <!-- dashboard__main-->
     </div><!-- dashboard-->
@@ -258,7 +456,7 @@
                   fill="#A3AED0"/>
         </symbol>
 
-        <symbol id="svg-options"  viewBox="0 0 27 32" fill="none">
+        <symbol id="svg-options" viewBox="0 0 27 32" fill="none">
             <path d="M3.81241 1.00239C3.63704 1.02436 3.49305 1.19383 3.49988 1.37049V19.9525C2.09488 20.1306 1 21.3346 1 22.7856C1 24.2364 2.09507 25.4404 3.49988 25.6187V30.638C3.49711 30.8265 3.66823 31 3.85708 31C4.04575 31 4.21687 30.8267 4.21429 30.638V25.6187C5.61928 25.4404 6.71416 24.2364 6.71416 22.7856C6.71416 21.3348 5.61909 20.1308 4.21429 19.9525V1.37049C4.22241 1.16411 4.0175 0.976551 3.81259 1.00239H3.81241ZM13.455 1.00239C13.2796 1.02436 13.1356 1.19383 13.1425 1.37049V4.96194C11.7375 5.14008 10.6426 6.34406 10.6426 7.79503C10.6426 9.24582 11.7377 10.4498 13.1425 10.6281V30.6378C13.1397 30.8263 13.3108 30.9998 13.4997 30.9998C13.6884 30.9998 13.8595 30.8265 13.8569 30.6378V10.6281C15.2619 10.45 16.3568 9.24601 16.3568 7.79503C16.3568 6.34425 15.2617 5.14025 13.8569 4.96194V1.37049C13.865 1.16411 13.6601 0.976551 13.4552 1.00239H13.455ZM23.0976 1.00239C22.9222 1.02436 22.7782 1.19383 22.7851 1.37049V13.1709C21.3801 13.3491 20.2852 14.553 20.2852 16.004C20.2852 17.4548 21.3803 18.6588 22.7851 18.8371V30.6375C22.7823 30.826 22.9534 30.9995 23.1423 30.9995C23.331 30.9995 23.5021 30.8262 23.4995 30.6375V18.8371C24.9045 18.6588 25.9994 17.4548 25.9994 16.004C25.9994 14.5532 24.9043 13.3492 23.4995 13.1709V1.37049C23.5076 1.16411 23.3027 0.976551 23.0978 1.00239H23.0976ZM13.4994 5.65347C14.6872 5.65347 15.6423 6.60804 15.6423 7.79503C15.6423 8.98202 14.6872 9.93659 13.4994 9.93659C12.3117 9.93659 11.3565 8.98202 11.3565 7.79503C11.3565 6.60804 12.3117 5.65347 13.4994 5.65347ZM23.142 13.8627C24.3298 13.8627 25.2849 14.8173 25.2849 16.0043C25.2849 17.1913 24.3298 18.1458 23.142 18.1458C21.9543 18.1458 20.9992 17.1913 20.9992 16.0043C20.9992 14.8173 21.9543 13.8627 23.142 13.8627ZM3.85636 20.6443C5.0441 20.6443 5.99924 21.5989 5.99924 22.7859C5.99924 23.9729 5.0441 24.9274 3.85636 24.9274C2.66861 24.9274 1.71347 23.9729 1.71347 22.7859C1.71347 21.5989 2.66861 20.6443 3.85636 20.6443Z"
                   fill="currentColor" stroke="currentColor"/>
         </symbol>
@@ -272,9 +470,29 @@
                   fill="currentColor"/>
         </symbol>
 
-        <symbol id="svg-exit"  viewBox="0 0 27 30" fill="none">
+        <symbol id="svg-exit" viewBox="0 0 27 30" fill="none">
             <path d="M0.617866 0.000741909C0.448307 0.0167212 0.290952 0.0955067 0.176554 0.221676C0.0622594 0.347845 -0.000771244 0.512286 7.12397e-06 0.682532V23.6393C-0.000214796 23.7733 0.0391783 23.9044 0.113083 24.0161C0.186989 24.1279 0.292074 24.2154 0.415482 24.2678L14.0511 29.9459C14.2618 30.0352 14.5033 30.0129 14.6942 29.8865C14.8849 29.76 14.9994 29.5463 14.9992 29.3174V24.204H18.0672C18.248 24.204 18.4215 24.1321 18.5493 24.0043C18.6771 23.8764 18.749 23.703 18.749 23.5222V0.682544C18.749 0.501778 18.6771 0.32833 18.5493 0.200495C18.4215 0.0726614 18.248 0.000756213 18.0672 0.000756213H0.681803C0.660498 -0.000242484 0.639172 -0.000256788 0.617866 0.000741909ZM3.87764 1.36431H17.3854V22.8404H14.9992V6.81856C14.9982 6.68762 14.9595 6.55967 14.8877 6.45003C14.8159 6.3405 14.7141 6.25395 14.5944 6.20069L3.87764 1.36431ZM1.36357 1.7265L13.6356 7.25518V28.2944L1.36357 23.181V1.7265ZM22.4562 8.17161C22.2712 8.17783 22.0968 8.25894 21.9727 8.39632C21.8487 8.53381 21.786 8.71568 21.7988 8.90033C21.8117 9.08498 21.8989 9.25642 22.0407 9.37539L24.1287 11.2503H20.7942C20.7729 11.2493 20.7516 11.2493 20.7303 11.2503C20.5494 11.2587 20.3794 11.3387 20.2574 11.4726C20.1356 11.6064 20.0718 11.7832 20.0803 11.964C20.0888 12.1449 20.1688 12.3149 20.3026 12.4369C20.4365 12.5587 20.6133 12.6224 20.7942 12.6139H24.1287L22.0407 14.4888C21.8581 14.6524 21.7765 14.9011 21.8269 15.1412C21.8773 15.3812 22.0519 15.5761 22.285 15.6525C22.5181 15.7288 22.7742 15.6751 22.9568 15.5115L26.3658 12.4434C26.5125 12.314 26.5966 12.1277 26.5966 11.9321C26.5966 11.7365 26.5125 11.5502 26.3658 11.4208L22.9568 8.35274C22.8214 8.22702 22.6407 8.16166 22.4562 8.17164L22.4562 8.17161ZM9.14014 13.6367C8.93518 13.6536 8.74897 13.7623 8.63312 13.9322C8.51738 14.1022 8.48442 14.3152 8.54357 14.5122C8.60261 14.7092 8.74753 14.8688 8.93773 14.947L10.9085 15.7885V17.0456C10.906 17.2281 10.9766 17.404 11.1048 17.5339C11.2329 17.6639 11.4077 17.737 11.5903 17.737C11.7728 17.737 11.9477 17.6639 12.0758 17.5339C12.2039 17.404 12.2746 17.2281 12.2721 17.0456V15.3411C12.2723 15.2071 12.2329 15.076 12.159 14.9643C12.0851 14.8525 11.98 14.765 11.8566 14.7126L9.47037 13.6899C9.36639 13.645 9.25288 13.6267 9.14014 13.6367Z"
                   fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-info" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.2892 2.57107C11.635 1.03872 8.36516 1.03872 5.71092 2.57107L5.71092 2.57107C3.05679 4.10332 1.42181 6.93546 1.42181 10C1.42181 13.0645 3.05671 15.8965 5.71094 17.4289C8.36518 18.9613 11.635 18.9613 14.2892 17.4289L14.6446 18.0446L14.2892 17.4289C16.9433 15.8967 18.5783 13.0648 18.5783 10C18.5783 6.93547 16.9434 4.10349 14.2892 2.57107ZM5.00005 1.33973C8.09418 -0.446576 11.9059 -0.446576 15.0001 1.33973L15.0001 1.33974C18.0942 3.12615 20.0001 6.42752 20.0001 10C20.0001 13.5727 18.0942 16.874 15.0001 18.6603C11.9059 20.4466 8.09418 20.4466 5.00005 18.6603L5.00003 18.6603C1.90588 16.8738 0 13.5725 0 10C0 6.42753 1.90594 3.12598 5.00005 1.33973ZM10.0001 5.84357C8.87135 5.84357 7.95503 6.7599 7.95503 7.88861H6.53322C6.53322 5.97465 8.08611 4.42176 10.0001 4.42176C11.914 4.42176 13.4669 5.97465 13.4669 7.88861C13.4669 9.14705 12.7953 10.2501 11.7942 10.8549L11.7699 10.8696L11.745 10.8821C11.745 10.8821 11.7449 10.8821 11.7449 10.8821C11.7444 10.8824 11.7421 10.8836 11.7373 10.8865C11.7296 10.891 11.7209 10.8962 11.7044 10.9064L11.7026 10.9075L11.7008 10.9086C11.1073 11.2689 10.7133 11.9182 10.7133 12.6588H9.29153C9.29153 11.4002 9.96301 10.3013 10.9609 9.69451L10.9641 9.69251C10.9876 9.67803 11.0286 9.65276 11.077 9.62697C11.6584 9.26742 12.0451 8.62263 12.0451 7.88861C12.0451 6.7599 11.1288 5.84357 10.0001 5.84357ZM10.711 13.8863V15.6635H9.28916V13.8863H10.711Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-step-line" viewBox="0 0 251 6" fill="none">
+            <path d="M251 2.99998L246 0.113227L246 5.88673L251 2.99998ZM4.37114e-08 3.5L246.5 3.49998L246.5 2.49998L-4.37114e-08 2.5L4.37114e-08 3.5Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-back" viewBox="0 0 12 20" fill="none">
+            <path d="M10.6585 0.77446L10.6831 0.799232C10.8451 0.971178 10.9357 1.19859 10.9357 1.43534C10.9357 1.68251 10.8369 1.91952 10.6613 2.09386L10.6602 2.09489L3.0951 9.64593L2.74056 9.99981L3.0951 10.3537L10.6602 17.9047L10.6613 17.9058C10.8369 18.0801 10.9357 18.3171 10.9357 18.5643C10.9357 18.8115 10.8369 19.0485 10.6612 19.2228L10.6585 19.2255C10.4842 19.4012 10.2472 19.5 10 19.5C9.75283 19.5 9.51581 19.4012 9.34148 19.2255L9.34011 19.2242L0.775832 10.6599L0.774455 10.6585C0.598769 10.4842 0.5 10.2472 0.5 10C0.5 9.75283 0.598772 9.51581 0.774462 9.34148L0.775829 9.34011L9.34012 0.775832L9.34148 0.774455C9.51581 0.598769 9.75282 0.5 10 0.5C10.2472 0.5 10.4842 0.598772 10.6585 0.77446Z"
+                  fill="currentColor" stroke="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-line-btn"  viewBox="0 0 31 6" fill="none">
+            <path d="M31 3L26 0.113249V5.88675L31 3ZM0 3.5H26.5V2.5H0V3.5Z" fill="currentColor"/>
         </symbol>
 
     </svg>
