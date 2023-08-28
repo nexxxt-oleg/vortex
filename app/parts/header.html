@@ -24,7 +24,7 @@
 <body>
 <div class="main">
     <div class="d-flex dashboard">
-        <div class="sidebar dashboard__sidebar">
+        <div class="sidebar dashboard__sidebar d-flex flex-column">
             <div class="sidebar__header d-flex justify-content-center">
                 <img class="d-block" src="./images/dist/logo.svg" width="200" height="65" alt="">
             </div>
@@ -122,6 +122,35 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="sidebar__informer mt-auto">
+                <div class="sidebar__informer__inner">
+                    <div class="sidebar__informer__img">
+                        <picture>
+                            <source srcset="images/dist/sb1.png, images/dist/sb1@2.png 2x">
+                            <img src="images/dist/sb1.png" width="170" height="100" alt="">
+                        </picture>
+                    </div>
+                    <div class="sidebar__informer__caption">Реферальная программа</div>
+                    <div class="sidebar__informer__description">Приведи друга и<br>
+                        получите денег вместе</div>
+                    <a href="" class="btn sidebar__informer__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+            <div class="sidebar__informer">
+                <div class="sidebar__informer__inner">
+                    <div class="sidebar__informer__img">
+                        <picture>
+                            <source srcset="images/dist/sb2.png, images/dist/sb2@2.png 2x">
+                            <img src="images/dist/sb2.png" width="197" height="120" alt="">
+                        </picture>
+                    </div>
+                    <div class="sidebar__informer__caption">Интерактивный помощник</div>
+                    <div class="sidebar__informer__description">Я тебе помогу<br>
+                        создать заявку</div>
+                    <a href="" class="btn sidebar__informer__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
         </div>
 
         <div class="dashboard__main flex-grow-1">
