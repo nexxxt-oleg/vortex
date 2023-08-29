@@ -248,7 +248,7 @@
                 <button class="nav-link text-uppercase"
                         data-bs-toggle="pill"
                         data-bs-target="#tab2"
-                        role="tab" a
+                        role="tab"
                         aria-selected="false">
                     Требующие внимания
                 </button>
@@ -466,7 +466,29 @@
                                                         aria-expanded="false">
                                                     Дата
                                                 </button>
-                                                <span class="count">11</span>
+                                                <span class="count">сегодня 10.01.2023</span>
+                                            </div>
+                                            <div class="table-filter__dropdown__date">
+                                                <div class="table-filter__dropdown__date__caption">
+                                                    Период
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="date_filter" type="text" class="input-field__text input-field__text--date" placeholder="с">
+                                                            <label for="date_filter" class="input-field__label">с</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="date_filter2" type="text" class="input-field__text input-field__text--date" placeholder="по">
+                                                            <label for="date_filter2" class="input-field__label">по</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
                                             </div>
                                         </div>
                                     </div>
@@ -500,7 +522,27 @@
                                                         aria-expanded="false">
                                                     Сумма
                                                 </button>
-                                                <span class="count">11</span>
+                                            </div>
+
+                                            <div class="table-filter__dropdown__date">
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="price_filter" type="text" class="input-field__text input-field__text--date" placeholder="от">
+                                                            <label for="price_filter" class="input-field__label">от</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="price_filter2" type="text" class="input-field__text input-field__text--date" placeholder="до">
+                                                            <label for="price_filter2" class="input-field__label">до</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
                                             </div>
                                         </div>
                                     </div>
@@ -645,7 +687,7 @@
                             </td>
                             <td>Комментарий</td>
                             <td style="width: 50px;" class="text-center">
-                                <a href="" class="ico-link active">
+                                <a href="" class="ico-link active d-inline-flex">
                                     <svg width="24" height="16">
                                         <use xlink:href="#svg-orderby"></use>
                                     </svg>
