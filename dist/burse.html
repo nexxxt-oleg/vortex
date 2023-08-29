@@ -290,7 +290,8 @@
                             </div>
                             <div class="col-1-3">
                                 <div class="input-field">
-                                    <input id="currency_from" type="text" class="input-field__text" placeholder="Валюта">
+                                    <input id="currency_from" type="text" class="input-field__text"
+                                           placeholder="Валюта">
                                     <label for="currency_from" class="input-field__label">Валюта</label>
                                 </div>
                             </div>
@@ -318,13 +319,15 @@
                         <div class="row justify-content-between">
                             <div class="col-1-3">
                                 <div class="input-field">
-                                    <input id="country_from2" type="text" class="input-field__text" placeholder="Страна">
+                                    <input id="country_from2" type="text" class="input-field__text"
+                                           placeholder="Страна">
                                     <label for="country_from2" class="input-field__label">Страна</label>
                                 </div>
                             </div>
                             <div class="col-1-3">
                                 <div class="input-field">
-                                    <input id="currency_from2" type="text" class="input-field__text" placeholder="Валюта">
+                                    <input id="currency_from2" type="text" class="input-field__text"
+                                           placeholder="Валюта">
                                     <label for="currency_from2" class="input-field__label">Валюта</label>
                                 </div>
                             </div>
@@ -345,7 +348,7 @@
                                 </button>
                             </div>
                             <div class="col-1-3">
-                                <button class="btn btn-success d-inline-flex align-items-center">
+                                <button class="btn btn-success btn-success--shadow d-inline-flex align-items-center">
                                     ФИЛЬТР
                                     <svg width="24" height="16" class="ms-3 btn__ico-r">
                                         <use xlink:href="#svg-orderby"></use>
@@ -410,16 +413,16 @@
                         data-bs-target="#tab1"
                         role="tab"
                         aria-selected="true">
-                    Черновики
+                    ЗАЯВКИ
                 </button>
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link text-uppercase"
                         data-bs-toggle="pill"
                         data-bs-target="#tab2"
-                        role="tab" a
+                        role="tab"
                         aria-selected="false">
-                    Требующие внимания
+                    ПРЕДЛОЖЕНИЯ
                 </button>
             </li>
             <li class="nav-item" role="presentation">
@@ -427,25 +430,14 @@
                         data-bs-toggle="pill"
                         data-bs-target="#tab3"
                         role="tab"
-                        aria-selected="false">В работе
+                        aria-selected="false">
+                    <span class="position-relative d-block color-green">
+                        В РАБОТЕ
+                    <span class="badge rounded-pill bg-success dashboard__header__count-event">2</span>
+                        </span>
                 </button>
             </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-uppercase"
-                        data-bs-toggle="pill"
-                        data-bs-target="#tab4"
-                        role="tab"
-                        aria-selected="false">Завершены
-                </button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-uppercase"
-                        data-bs-toggle="pill"
-                        data-bs-target="#tab5"
-                        role="tab"
-                        aria-selected="false">На исполнении
-                </button>
-            </li>
+
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="pills-home-tab"
@@ -480,119 +472,7 @@
                     <table class="table table-hover table-borderless table-striped table-filter">
                         <thead>
                         <tr id="accordionFilter">
-                            <td>
-                                <div class="accordion-item table-filter__dropdown">
-                                    <button class="dropdown-toggle collapsed"
-                                            data-bs-toggle="collapse"
-                                            data-bs-target="#status"
-                                            aria-expanded="false">
-                                        Статус
-                                    </button>
-                                    <div id="status" class="accordion-collapse collapse"
-                                         data-bs-parent="#accordionFilter">
-                                        <div class="table-filter__dropdown__body">
-                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
-                                                <button class="dropdown-toggle active"
-                                                        data-bs-toggle="collapse"
-                                                        data-bs-target="#status"
-                                                        aria-expanded="false">
-                                                    Статус
-                                                </button>
-                                                <span class="count">11</span>
-                                            </div>
-                                            <form action="" class="table-filter__dropdown__search">
-                                                <div class="input-field input-field--left-ico">
-                                                    <input type="text"
-                                                           class="input-field__text input-field__text--mini placeholder-shown"
-                                                           placeholder="Найти">
-                                                </div>
-                                                <button class="table-filter__dropdown__search__submit" type="submit">
-                                                    <svg width="21" height="20">
-                                                        <use xlink:href="#svg-search"></use>
-                                                    </svg>
-                                                </button>
-                                            </form>
-                                            <div class="pb-3">
-                                                <button class="btn btn-sm btn-primary radius-10">выбрать все</button>
-                                            </div>
-                                            <div class="table-filter__dropdown__list">
-                                                <ul class="nav flex-column">
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck1">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck1">
-                                                                Черновик
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck2">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck2">
-                                                                Черновик
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck3">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck3">
-                                                                Черновик
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck4">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck4">
-                                                                Черновик
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck5">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck5">
-                                                                Черновик
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                    <li>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" value=""
-                                                                   id="flexCheck6">
-                                                            <label class="form-check-label d-flex justify-content-between"
-                                                                   for="flexCheck6">
-                                                                ИП Иванов Иван
-                                                                Иванович
-                                                                <span class="count">11</span>
-                                                            </label>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="table-filter__dropdown__footer">
-                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </td>
+
                             <td>
                                 <div class="accordion-item table-filter__dropdown">
                                     <button class="dropdown-toggle collapsed"
@@ -623,7 +503,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#dateFilter"
                                             aria-expanded="false">
-                                        Дата
+                                        Агент
                                     </button>
                                     <div id="dateFilter" class="accordion-collapse collapse"
                                          data-bs-parent="#accordionFilter">
@@ -642,14 +522,28 @@
                                 </div>
                             </td>
                             <td>
-                                <button class="btn d-inline-flex align-items-center btn-sm btn-primary">
-                                    Валюта: <span class="color-silver ms-1">3</span>
-                                    <span class="ms-2">
-                                        <svg width="8" height="8">
-                                            <use xlink:href="#svg-close"></use>
-                                        </svg>
-                                    </span>
-                                </button>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#cityFilter2"
+                                            aria-expanded="false">
+                                        Страна
+                                    </button>
+                                    <div id="cityFilter2" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#cityFilter2"
+                                                        aria-expanded="false">
+                                                    Страна
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                             <td>
                                 <div class="accordion-item table-filter__dropdown">
@@ -681,7 +575,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#cityFilter"
                                             aria-expanded="false">
-                                        Страна
+                                        Валюта
                                     </button>
                                     <div id="cityFilter" class="accordion-collapse collapse"
                                          data-bs-parent="#accordionFilter">
@@ -705,7 +599,7 @@
                                             data-bs-toggle="collapse"
                                             data-bs-target="#recipientFilter"
                                             aria-expanded="false">
-                                        Получатель
+                                        Комиссия
                                     </button>
                                     <div id="recipientFilter" class="accordion-collapse collapse"
                                          data-bs-parent="#accordionFilter">
@@ -715,7 +609,7 @@
                                                         data-bs-toggle="collapse"
                                                         data-bs-target="#recipientFilter"
                                                         aria-expanded="false">
-                                                    Получатель
+                                                    Комиссия
                                                 </button>
                                                 <span class="count">11</span>
                                             </div>
@@ -812,9 +706,114 @@
                                     </div>
                                 </div>
                             </td>
-                            <td>Комментарий</td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#raitingFilter"
+                                            aria-expanded="false">
+                                        Рейтинг
+                                    </button>
+                                    <div id="raitingFilter" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#raitingFilter"
+                                                        aria-expanded="false">
+                                                    Рейтинг
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#colFilter1"
+                                            aria-expanded="false">
+                                        Заявок<br>
+                                        исполнено
+                                    </button>
+                                    <div id="colFilter1" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#colFilter1"
+                                                        aria-expanded="false">
+                                                    Заявок<br>
+                                                    исполнено
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#colFilter2"
+                                            aria-expanded="false">
+                                        Сумма<br>
+                                        исполнено
+                                    </button>
+                                    <div id="colFilter2" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#colFilter2"
+                                                        aria-expanded="false">
+                                                    Сумма<br>
+                                                    исполнено
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#colFilter3"
+                                            aria-expanded="false">
+                                        Времени<br>
+                                        на портале
+                                    </button>
+                                    <div id="colFilter3" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#colFilter3"
+                                                        aria-expanded="false">
+                                                    Времени<br>
+                                                    на портале
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td></td>
                             <td style="width: 50px;" class="text-center">
-                                <a href="" class="ico-link active">
+                                <a href="" class="ico-link active d-inline-flex">
                                     <svg width="24" height="16">
                                         <use xlink:href="#svg-orderby"></use>
                                     </svg>
@@ -921,27 +920,90 @@
                                 </div>
                             </td>
                             <td>
-
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
                             </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
                             <td></td>
                         </tr>
                         </thead>
 
                         <tbody>
                         <tr>
-                            <td>
-                                <span class="btn btn-sm btn-border">Черновик</span>
-                            </td>
+
                             <td>125</td>
                             <td>125</td>
                             <td>Рубли (RUB)</td>
                             <td>100.000.000 ₽</td>
                             <td>Армения</td>
-                            <td>ИП Иванов Иван Иванович</td>
+                            <td>0.01%</td>
                             <td>
-                                <div class="comment">
-                                    Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
+                                <div class="rating-td">
+                                    <div class="rating-td__stars">
+                                        <svg width="88" height="14" class="rating-td__stars__passive d-block">
+                                            <use xlink:href="#svg-stars"></use>
+                                        </svg>
+                                        <div class="rating-td__stars__active" style="width: 95%">
+                                            <svg width="88" height="14" class="d-block">
+                                                <use xlink:href="#svg-stars"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating-td__value">
+                                        4.9
+                                    </div>
                                 </div>
+                            </td>
+                            <td>
+                                <span class="color-green">20</span> / 22
+                            </td>
+                            <td>100.000.000 $</td>
+                            <td>20 мес / 5 дней</td>
+                            <td>
+                                <button class="btn btn-reset d-inline-flex align-items-center color-green">
+                                    ОБСУДИТЬ
+                                    <svg width="26" height="22" class="ms-2 btn__ico-r">
+                                        <use xlink:href="#svg-comment"></use>
+                                    </svg>
+                                </button>
                             </td>
                             <td>
                                 <a href=""
@@ -953,17 +1015,41 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><span class="btn btn-sm btn-border">Черновик</span></td>
                             <td>125</td>
                             <td>125</td>
                             <td>Рубли (RUB)</td>
                             <td>100.000.000 ₽</td>
                             <td>Армения</td>
-                            <td>ИП Иванов Иван Иванович</td>
+                            <td>0.01%</td>
                             <td>
-                                <div class="comment">
-                                    Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
+                                <div class="rating-td">
+                                    <div class="rating-td__stars">
+                                        <svg width="88" height="14" class="rating-td__stars__passive d-block">
+                                            <use xlink:href="#svg-stars"></use>
+                                        </svg>
+                                        <div class="rating-td__stars__active" style="width: 80%">
+                                            <svg width="88" height="14" class="d-block">
+                                                <use xlink:href="#svg-stars"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="rating-td__value">
+                                        4.0
+                                    </div>
                                 </div>
+                            </td>
+                            <td>
+                                <span class="color-green">20</span>
+                            </td>
+                            <td>100.000.000 $</td>
+                            <td>20 мес / 5 дней</td>
+                            <td>
+                                <button class="btn btn-reset d-inline-flex align-items-center color-green">
+                                    ОБСУДИТЬ
+                                    <svg width="26" height="22" class="ms-2 btn__ico-r">
+                                        <use xlink:href="#svg-comment"></use>
+                                    </svg>
+                                </button>
                             </td>
                             <td>
                                 <a href=""
@@ -974,50 +1060,7 @@
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td><span class="btn btn-sm btn-border">Черновик</span></td>
-                            <td>125</td>
-                            <td>125</td>
-                            <td>125</td>
-                            <td>100.000.000 ₽</td>
-                            <td>Армения</td>
-                            <td>ИП Иванов Иван Иванович</td>
-                            <td>
-                                <div class="comment">
-                                    Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
-                                </div>
-                            </td>
-                            <td>
-                                <a href=""
-                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
-                                    <svg width="4" height="20">
-                                        <use xlink:href="#svg-td-order"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="btn btn-sm btn-border">Черновик</span></td>
-                            <td>125</td>
-                            <td>125</td>
-                            <td>125</td>
-                            <td>100.000.000 ₽</td>
-                            <td>Армения</td>
-                            <td>ИП Иванов Иван Иванович</td>
-                            <td>
-                                <div class="comment">
-                                    Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
-                                </div>
-                            </td>
-                            <td>
-                                <a href=""
-                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
-                                    <svg width="4" height="20">
-                                        <use xlink:href="#svg-td-order"></use>
-                                    </svg>
-                                </a>
-                            </td>
-                        </tr>
+
                         </tbody>
                     </table>
                     <div class="dashboard__card__table-box__footer">
@@ -1037,36 +1080,11 @@
             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="pills-contact-tab"
                  tabindex="0">...
             </div>
-            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="pills-disabled-tab"
-                 tabindex="0">...
-            </div>
-            <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="pills-disabled-tab"
-                 tabindex="0">...
-            </div>
+
         </div>
     </div>
 
-    <div class="dashboard__main__body__footer-btns d-flex align-items-center">
-        <button class="btn btn-reset d-inline-flex align-items-center">
-            ОЧИСТИТЬ
-            <svg width="12" height="12" class="ms-3 btn__ico-r">
-                <use xlink:href="#svg-close"></use>
-            </svg>
-        </button>
 
-        <button class="btn btn-outline-success d-inline-flex align-items-center ms-auto me-4">
-            СОХРАНИТЬ
-            <svg width="16" height="12" class="ms-3 btn__ico-r">
-                <use xlink:href="#svg-save"></use>
-            </svg>
-        </button>
-        <button class="btn btn-success d-inline-flex align-items-center">
-            ОТПРАВИТЬ
-            <svg width="9" height="14" class="ms-3 btn__ico-r">
-                <use xlink:href="#svg-right"></use>
-            </svg>
-        </button>
-    </div>
 </div>
 
         </div> <!-- dashboard__main-->
@@ -1218,6 +1236,30 @@
 
         <symbol id="svg-save" viewBox="0 0 16 12" fill="none">
             <path d="M13.9952 0.000640181C15.6596 -0.0409773 16.4919 1.95636 15.3059 3.12147L6.81754 11.6099C6.29736 12.13 5.4236 12.13 4.90345 11.6099L0.596894 7.28239C-1.19235 5.57637 1.44989 2.93399 3.15591 4.72337L5.54845 7.11591C5.71493 7.28238 6.00614 7.28238 6.19338 7.11591L12.7469 0.56234C13.0798 0.208632 13.5167 0.0214257 13.9953 0.000667906L13.9952 0.000640181Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-stars" viewBox="0 0 88 14" fill="none">
+            <path d="M14.5701 5.20354C14.4491 4.95575 14.207 4.83186 13.965 4.83186H9.36617L7.9139 0.371681C7.79288 -0.123894 6.94573 -0.123894 6.70369 0.371681L5.25142 4.83186H0.652587C0.410543 4.83186 0.168499 4.95575 0.0474773 5.20354C-0.0735446 5.45132 0.0474782 5.69911 0.289522 5.9469L4.0412 8.67257L2.58894 13.1327C2.46792 13.3805 2.58894 13.6283 2.83098 13.8761C3.07303 14 3.31507 14 3.55711 13.8761L7.30879 11.1504L11.0605 13.8761C11.1815 14 11.3025 14 11.4235 14C11.5446 14 11.6656 14 11.7866 13.8761C12.0287 13.7522 12.1497 13.5044 12.0287 13.1327L10.5764 8.67257L14.3281 5.9469C14.5701 5.69911 14.6911 5.45132 14.5701 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M32.7234 5.20354C32.6024 4.95575 32.3603 4.83186 32.1183 4.83186H27.5195L26.0672 0.371681C25.9462 -0.123894 25.099 -0.123894 24.857 0.371681L23.4047 4.83186H18.8059C18.5638 4.83186 18.3218 4.95575 18.2008 5.20354C18.0798 5.45132 18.2008 5.69911 18.4428 5.9469L22.1945 8.67257L20.7422 13.1327C20.6212 13.3805 20.7422 13.6283 20.9843 13.8761C21.2263 14 21.4684 14 21.7104 13.8761L25.4621 11.1504L29.2138 13.8761C29.3348 14 29.4558 14 29.5768 14C29.6979 14 29.8189 14 29.9399 13.8761C30.1819 13.7522 30.303 13.5044 30.1819 13.1327L28.7297 8.67257L32.4814 5.9469C32.7234 5.69911 32.8444 5.45132 32.7234 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M50.8767 5.20354C50.7557 4.95575 50.5136 4.83186 50.2716 4.83186H45.6728L44.2205 0.371681C44.0995 -0.123894 43.2523 -0.123894 43.0103 0.371681L41.558 4.83186H36.9592C36.7171 4.83186 36.4751 4.95575 36.3541 5.20354C36.233 5.45132 36.3541 5.69911 36.5961 5.9469L40.3478 8.67257L38.8955 13.1327C38.7745 13.3805 38.8955 13.6283 39.1376 13.8761C39.3796 14 39.6217 14 39.8637 13.8761L43.6154 11.1504L47.3671 13.8761C47.4881 14 47.6091 14 47.7301 14C47.8512 14 47.9722 14 48.0932 13.8761C48.3352 13.7522 48.4563 13.5044 48.3352 13.1327L46.883 8.67257L50.6347 5.9469C50.8767 5.69911 50.9977 5.45132 50.8767 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M69.03 5.20354C68.909 4.95575 68.6669 4.83186 68.4249 4.83186H63.8261L62.3738 0.371681C62.2528 -0.123894 61.4056 -0.123894 61.1636 0.371681L59.7113 4.83186H55.1125C54.8704 4.83186 54.6284 4.95575 54.5074 5.20354C54.3863 5.45132 54.5074 5.69911 54.7494 5.9469L58.5011 8.67257L57.0488 13.1327C56.9278 13.3805 57.0488 13.6283 57.2909 13.8761C57.5329 14 57.775 14 58.017 13.8761L61.7687 11.1504L65.5204 13.8761C65.6414 14 65.7624 14 65.8834 14C66.0045 14 66.1255 14 66.2465 13.8761C66.4885 13.7522 66.6096 13.5044 66.4885 13.1327L65.0363 8.67257L68.7879 5.9469C69.03 5.69911 69.151 5.45132 69.03 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M32.5701 5.20354C32.4491 4.95575 32.207 4.83186 31.965 4.83186H27.3662L25.9139 0.371681C25.7929 -0.123894 24.9457 -0.123894 24.7037 0.371681L23.2514 4.83186H18.6526C18.4105 4.83186 18.1685 4.95575 18.0475 5.20354C17.9265 5.45132 18.0475 5.69911 18.2895 5.9469L22.0412 8.67257L20.5889 13.1327C20.4679 13.3805 20.5889 13.6283 20.831 13.8761C21.073 14 21.3151 14 21.5571 13.8761L25.3088 11.1504L29.0605 13.8761C29.1815 14 29.3025 14 29.4235 14C29.5446 14 29.6656 14 29.7866 13.8761C30.0287 13.7522 30.1497 13.5044 30.0287 13.1327L28.5764 8.67257L32.3281 5.9469C32.5701 5.69911 32.6911 5.45132 32.5701 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M50.7234 5.20354C50.6024 4.95575 50.3603 4.83186 50.1183 4.83186H45.5195L44.0672 0.371681C43.9462 -0.123894 43.099 -0.123894 42.857 0.371681L41.4047 4.83186H36.8059C36.5638 4.83186 36.3218 4.95575 36.2008 5.20354C36.0798 5.45132 36.2008 5.69911 36.4428 5.9469L40.1945 8.67257L38.7422 13.1327C38.6212 13.3805 38.7422 13.6283 38.9843 13.8761C39.2263 14 39.4684 14 39.7104 13.8761L43.4621 11.1504L47.2138 13.8761C47.3348 14 47.4558 14 47.5768 14C47.6979 14 47.8189 14 47.9399 13.8761C48.1819 13.7522 48.303 13.5044 48.1819 13.1327L46.7297 8.67257L50.4814 5.9469C50.7234 5.69911 50.8444 5.45132 50.7234 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M68.8767 5.20354C68.7557 4.95575 68.5136 4.83186 68.2716 4.83186H63.6728L62.2205 0.371681C62.0995 -0.123894 61.2523 -0.123894 61.0103 0.371681L59.558 4.83186H54.9592C54.7171 4.83186 54.4751 4.95575 54.3541 5.20354C54.233 5.45132 54.3541 5.69911 54.5961 5.9469L58.3478 8.67257L56.8955 13.1327C56.7745 13.3805 56.8955 13.6283 57.1376 13.8761C57.3796 14 57.6217 14 57.8637 13.8761L61.6154 11.1504L65.3671 13.8761C65.4881 14 65.6091 14 65.7301 14C65.8512 14 65.9722 14 66.0932 13.8761C66.3352 13.7522 66.4563 13.5044 66.3352 13.1327L64.883 8.67257L68.6347 5.9469C68.8767 5.69911 68.9977 5.45132 68.8767 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M87.03 5.20354C86.909 4.95575 86.6669 4.83186 86.4249 4.83186H81.8261L80.3738 0.371681C80.2528 -0.123894 79.4056 -0.123894 79.1636 0.371681L77.7113 4.83186H73.1125C72.8704 4.83186 72.6284 4.95575 72.5074 5.20354C72.3863 5.45132 72.5074 5.69911 72.7494 5.9469L76.5011 8.67257L75.0488 13.1327C74.9278 13.3805 75.0488 13.6283 75.2909 13.8761C75.5329 14 75.775 14 76.017 13.8761L79.7687 11.1504L83.5204 13.8761C83.6414 14 83.7624 14 83.8834 14C84.0045 14 84.1255 14 84.2465 13.8761C84.4885 13.7522 84.6096 13.5044 84.4885 13.1327L83.0363 8.67257L86.7879 5.9469C87.03 5.69911 87.151 5.45132 87.03 5.20354Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-comment"  viewBox="0 0 26 22" fill="none">
+            <path d="M5.19338 0C2.4044 0 0 2.4044 0 5.19338V12.1181C0 14.907 2.4044 17.3114 5.19338 17.3114L7.69399 21.6393C7.98255 22.1202 8.65572 22.1202 8.84807 21.6393C9.71369 20.1966 10.5792 18.754 11.4448 17.3114H19.9084C22.7937 17.3114 25.1017 15.0032 25.1017 12.1181V5.19338C25.1017 2.4044 22.7935 0 19.9084 0H5.19338ZM12.3105 7.21319C11.7334 7.21319 11.1564 7.79023 11.1564 8.36727C11.1564 9.04055 11.7334 9.52135 12.3105 9.52135C12.9838 9.52135 13.4646 9.04041 13.4646 8.36727C13.4646 7.79023 12.9836 7.21319 12.3105 7.21319ZM17.7926 7.21319C17.2156 7.21319 16.6386 7.79023 16.6386 8.36727C16.6386 9.04055 17.2156 9.52135 17.7926 9.52135C18.4659 9.52135 18.9467 9.04041 18.9467 8.36727C18.9467 7.79023 18.4658 7.21319 17.7926 7.21319ZM6.8286 7.21319C6.25156 7.21319 5.67452 7.79023 5.67452 8.36727C5.67452 9.04055 6.25156 9.52135 6.8286 9.52135C7.50188 9.52135 7.98268 9.04041 7.98268 8.36727C7.98268 7.79023 7.50175 7.21319 6.8286 7.21319ZM5.19359 1.34645H19.9085C22.0243 1.34645 23.7554 3.07757 23.7554 5.19338V12.1181C23.7554 14.2339 22.0243 15.965 19.9085 15.965H11.0603C11.0603 15.965 10.4833 16.2535 10.4833 16.3497C9.71391 17.6 9.04063 18.7541 8.27124 20.0044L6.15543 16.3497C5.96308 15.965 5.57839 15.965 5.1937 15.965C3.07789 15.965 1.34677 14.2339 1.34677 12.1181V5.19338C1.34677 3.07757 3.07778 1.34645 5.19359 1.34645Z"
                   fill="currentColor"/>
         </symbol>
 
