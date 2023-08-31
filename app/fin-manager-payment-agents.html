@@ -1,0 +1,450 @@
+<!--#set var="title" value="Финансовый менеджер Платежные агенты" -->
+<!--#include virtual="/parts/header-fin.html" -->
+
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-12">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-lg-6  d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Платежные агенты</h1>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <a href="" class="btn btn-success d-inline-flex align-items-center">
+                            СОЗДАТЬ КЛИЕНТА
+                            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                                <use xlink:href="#svg-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+        <div class="top-table-filter">
+            <div class="d-flex align-items-center">
+                <div class="top-table-filter__views-page d-flex align-items-center">
+                    <span class="top-table-filter__label me-2 text-nowrap">Строк на странице</span>
+                    <select class="input-field__select input-field__select--min">
+                        <option>10</option>
+                        <option>20</option>
+                        <option>30</option>
+                    </select>
+                </div>
+                <div class="top-table-filter__views d-flex align-items-center">
+                    <span class="top-table-filter__label me-2 text-nowrap">Показаны</span>
+                    <span class="top-table-filter__value me-2 text-nowrap">1 — 10</span>
+                    <span class="top-table-filter__label me-2 text-nowrap">из 505</span>
+                </div>
+                <div class="top-table-filter__search">
+                    <input type="text" class="input-field__text input-field__text--mini placeholder-shown"
+                           placeholder="Поиск">
+                    <button class="top-table-filter__search__submit" type="submit">
+                        <svg width="21" height="20">
+                            <use xlink:href="#svg-search"></use>
+                        </svg>
+                    </button>
+                </div>
+                <a href="" class="top-table-filter__fullscreen">
+                    <svg width="20" height="20">
+                        <use xlink:href="#svg-fullscreen"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="dashboard__card__table-box">
+
+            <table class="table table-hover table-borderless table-striped table-filter">
+                <thead>
+                <tr id="accordionFilter">
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_1"
+                                    aria-expanded="false">
+                                №
+                            </button>
+                            <div id="col1_1" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_1"
+                                                aria-expanded="false">
+                                            №
+                                        </button>
+                                        <span class="count">11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_2"
+                                    aria-expanded="false">
+                                Платежный агент
+                            </button>
+                            <div id="col1_2" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_2"
+                                                aria-expanded="false">
+                                            Платежный агент
+                                        </button>
+                                        <span class="count">11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_3"
+                                    aria-expanded="false">
+                                Платежные агенты
+                            </button>
+                            <div id="col1_3" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_3"
+                                                aria-expanded="false">
+                                            Платежные агенты
+                                        </button>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_4"
+                                    aria-expanded="false">
+                                Валюта
+                            </button>
+                            <div id="col1_4" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_4"
+                                                aria-expanded="false">
+                                            Валюта
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_5"
+                                    aria-expanded="false">
+                                Заявок в работе
+                            </button>
+                            <div id="col1_5" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_5"
+                                                aria-expanded="false">
+                                            Заявок в работе
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_6"
+                                    aria-expanded="false">
+                                Заявок всего
+                            </button>
+                            <div id="col1_6" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_6"
+                                                aria-expanded="false">
+                                            Заявок всего
+                                        </button>
+                                        <span class="count">11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="accordion-item table-filter__dropdown">
+                            <button class="dropdown-toggle collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#col1_7"
+                                    aria-expanded="false">
+                                Дата последнего<br>
+                                оформления
+                            </button>
+                            <div id="col1_7" class="accordion-collapse collapse"
+                                 data-bs-parent="#accordionFilter">
+                                <div class="table-filter__dropdown__body">
+                                    <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                        <button class="dropdown-toggle active"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#col1_7"
+                                                aria-expanded="false">
+                                            Дата последнего<br>
+                                            оформления
+                                        </button>
+                                        <span class="count">11</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="width: 50px;" class="text-center">
+                        <a href="" class="ico-link active d-inline-flex">
+                            <svg width="24" height="16">
+                                <use xlink:href="#svg-orderby"></use>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="table-filter__col-order">
+                            <a href="" class="mb-2 d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-top"></use>
+                                </svg>
+                            </a>
+                            <a href="" class="d-block">
+                                <svg width="10" height="6">
+                                    <use xlink:href="#svg-bottom"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </td>
+                    <td></td>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+
+                    <td>125</td>
+                    <td>125</td>
+                    <td>Рубли (RUB)</td>
+                    <td>100.000.000 ₽</td>
+                    <td>Армения</td>
+                    <td>ИП Иванов Иван Иванович</td>
+                    <td>
+                        30.01.2023
+                    </td>
+                    <td>
+                        <a href=""
+                           class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                            <svg width="4" height="20">
+                                <use xlink:href="#svg-td-order"></use>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>125</td>
+                    <td>125</td>
+                    <td>Рубли (RUB)</td>
+                    <td>100.000.000 ₽</td>
+                    <td>Армения</td>
+                    <td>ИП Иванов Иван Иванович</td>
+                    <td>
+                        30.01.2023
+                    </td>
+                    <td>
+                        <a href=""
+                           class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                            <svg width="4" height="20">
+                                <use xlink:href="#svg-td-order"></use>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>125</td>
+                    <td>125</td>
+                    <td>125</td>
+                    <td>100.000.000 ₽</td>
+                    <td>Армения</td>
+                    <td>ИП Иванов Иван Иванович</td>
+                    <td>
+                        30.01.2023
+                    </td>
+                    <td>
+                        <a href=""
+                           class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                            <svg width="4" height="20">
+                                <use xlink:href="#svg-td-order"></use>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>125</td>
+                    <td>125</td>
+                    <td>125</td>
+                    <td>100.000.000 ₽</td>
+                    <td>Армения</td>
+                    <td>ИП Иванов Иван Иванович</td>
+                    <td>
+                        30.01.2023
+                    </td>
+                    <td>
+                        <a href=""
+                           class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                            <svg width="4" height="20">
+                                <use xlink:href="#svg-td-order"></use>
+                            </svg>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="dashboard__card__table-box__footer">
+                <ul class="nav nav--pagination">
+                    <li><span class="page active">1</span></li>
+                    <li><a class="page" href="">2</a></li>
+                    <li><a class="page" href="">3</a></li>
+                    <li><span class="dots">. . .</span></li>
+                    <li><a class="page" href="">10</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<!--#include virtual="/parts/footer.html" -->
