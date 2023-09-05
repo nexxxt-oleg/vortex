@@ -61,6 +61,7 @@ body {
 
       &__ico {
         width: 20px;
+        min-width: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -192,7 +193,7 @@ body {
   position: absolute;
   z-index: 1;
   top: -18px;
-  right: -15px;
+  right: -10px;
   background: #19BB77 !important;
   line-height: 1 !important;
   font-style: normal;
@@ -1347,3 +1348,111 @@ td {
   line-height: 24px;
 }
 
+.custom-checkbox {
+  input {
+    display: none;
+    &:checked + .custom-checkbox__value {
+      .custom-checkbox__inp {
+        &::after {
+          opacity: 0.3;
+          background: #219653;
+        }
+        &::before {
+          background: #219653;
+          margin-left: 2px;
+        }
+      }
+    }
+
+  }
+  &__value {
+    white-space: nowrap;
+    color: #000;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    height: 30px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+  }
+  &__inp {
+    width: 56px;
+    height: 30px;
+    min-width: 56px;
+    border-radius: 15px;
+    border: 1px solid #A3AED0;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    margin-right: 15px;
+    display: block;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 50%;
+      margin-left: -22px;
+      margin-top: -10px;
+      height: 20px;
+      width: 44px;
+      opacity: 0.2;
+      background: #A3AED0;
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+    }
+    &::before {
+      transition: all 0.3s ease-in-out;
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      margin-top: -10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 10px;
+      background: #A3AED0;
+      margin-left: -22px;
+    }
+  }
+}
+
+.bg-danger.dashboard__header__count-event {
+  background: #EB5757 !important;
+}
+.dashboard__header__count-event.badge--left {
+  right: auto;
+  left: -10px;
+}
+.balance {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 35px;
+  line-height: 22px;
+  height: 22px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  &--positive {
+    color: #219653;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='13' viewBox='0 0 22 13' fill='none'%3E%3Cpath d='M10.602 7.781L12.014 9.193L20.48 0.727L21.894 2.141L12.014 12.021L5.65 5.657L7.064 4.243L9.189 6.368L10.602 7.78V7.781ZM10.604 4.953L15.556 0L16.966 1.41L12.014 6.363L10.604 4.953ZM7.777 10.608L6.364 12.021L0 5.657L1.414 4.243L2.827 5.656L2.826 5.657L7.777 10.608Z' fill='%23219653'/%3E%3C/svg%3E");
+  }
+  &--wait {
+    color: #F2994A;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 18C12.1217 18 14.1566 17.1571 15.6569 15.6569C17.1571 14.1566 18 12.1217 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2C7.87827 2 5.84344 2.84285 4.34315 4.34315C2.84285 5.84344 2 7.87827 2 10C2 12.1217 2.84285 14.1566 4.34315 15.6569C5.84344 17.1571 7.87827 18 10 18ZM11 10H15V12H9V5H11V10Z' fill='%23F2994A'/%3E%3C/svg%3E");
+  }
+  &--danger {
+    color: #EB5757;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='19' viewBox='0 0 22 19' fill='none'%3E%3Cpath d='M11.392 0.499956L20.918 17C21.0057 17.152 21.0519 17.3244 21.0519 17.5C21.052 17.6755 21.0057 17.8479 20.918 17.9999C20.8302 18.152 20.704 18.2782 20.552 18.366C20.4 18.4537 20.2275 18.5 20.052 18.5H0.999975C0.82444 18.5 0.651999 18.4537 0.499984 18.366C0.347968 18.2782 0.221734 18.152 0.133968 17.9999C0.0462029 17.8479 -1.11483e-06 17.6755 0 17.5C1.11487e-06 17.3244 0.0462074 17.152 0.133975 17L9.65997 0.499956C9.74775 0.347949 9.87398 0.221722 10.026 0.133962C10.178 0.0462015 10.3504 0 10.526 0C10.7015 0 10.8739 0.0462015 11.026 0.133962C11.178 0.221722 11.3042 0.347949 11.392 0.499956ZM2.73197 16.5H18.32L10.526 2.99996L2.73197 16.5ZM9.52597 13.5H11.526V15.5H9.52597V13.5ZM9.52597 6.49996H11.526V11.5H9.52597V6.49996Z' fill='%23EB5757'/%3E%3C/svg%3E");
+  }
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #2F80ED;
+  --bs-btn-border-color: #2F80ED;
+}
