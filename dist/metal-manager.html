@@ -1,0 +1,2106 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Менеджер по металлу</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="main">
+    <div class="d-flex dashboard">
+        <div class="sidebar dashboard__sidebar d-flex flex-column">
+            <div class="sidebar__header d-flex justify-content-center">
+                <img class="d-block" src="./images/dist/logo.svg" width="200" height="65" alt="">
+            </div>
+            <nav class="sidebar__body">
+                <ul class="nav flex-column sidebar__body__nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center active">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-refunds"></use>
+                                </svg>
+                            </div>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="22">
+                                    <use xlink:href="#svg-nav-burse"></use>
+                                </svg>
+                            </div>
+                            Биржа
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-payments"></use>
+                                </svg>
+                            </div>
+                            Покупатели
+                            металла
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-translations"></use>
+                                </svg>
+                            </div>
+                            Поставщики
+                            металла
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center ">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-home"></use>
+                                </svg>
+                            </div>
+                            Заявки
+                            поставщикам
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center ">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-company"></use>
+                                </svg>
+                            </div>
+                            Транзакции
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center ">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="18" height="20">
+                                    <use xlink:href="#svg-nav-doc"></use>
+                                </svg>
+
+                            </div>
+                            Документы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-opportunities"></use>
+                                </svg>
+                            </div>
+                            Возможности
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-rating"></use>
+                                </svg>
+                            </div>
+                            Рейтинг
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-analytics"></use>
+                                </svg>
+                            </div>
+                            Аналитика
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-ico2"></use>
+                                </svg>
+                            </div>
+                            История
+                            авторизаций
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="sidebar__informer mt-auto">
+                <div class="sidebar__informer__inner">
+                    <div class="sidebar__informer__img">
+                        <picture>
+                            <source srcset="images/dist/sb1.png, images/dist/sb1@2.png 2x">
+                            <img src="images/dist/sb1.png" width="170" height="100" alt="">
+                        </picture>
+                    </div>
+                    <div class="sidebar__informer__caption">Реферальная программа</div>
+                    <div class="sidebar__informer__description">Приведи друга и<br>
+                        получите денег вместе</div>
+                    <a href="" class="btn sidebar__informer__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard__main flex-grow-1">
+            <header class="dashboard__header">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 d-flex align-items-center">
+                        <div class="d-flex dashboard__user me-5">
+                            <div class="dashboard__user__ava">
+                                <img width="50" height="50" src="./images/dist/user1.jpg" alt="">
+                            </div>
+                            <div class="dashboard__user__desc">
+                                <div class="dashboard__user__position">
+                                    Менеджер по металлу
+                                </div>
+                                <div class="dashboard__user__name">Иванов Александр</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-5">
+                    </div>
+                    <div class="col-lg-3 d-flex align-items-center d-flex align-items-center">
+                        <ul class="nav ms-auto align-items-center dashboard__header__nav">
+                            <li>
+                                <a href="">
+                                    <svg width="27" height="32">
+                                        <use xlink:href="#svg-options"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="active">
+                                    <span class="badge rounded-pill bg-success dashboard__header__count-event">2</span>
+                                    <svg width="26" height="30" >
+                                        <use xlink:href="#svg-event"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="27" height="30" >
+                                        <use xlink:href="#svg-exit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+
+
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-12">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-lg-6  d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Главная</h1>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end">
+                        <a href="" class="btn btn-success d-inline-flex align-items-center">
+                            СОЗДАТЬ ЗАЯВКУ
+                            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                                <use xlink:href="#svg-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+
+        <ul class="nav nav-pills dashboard__card__tabs dashboard__card__tabs--top" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active text-uppercase"
+                        data-bs-toggle="pill"
+                        data-bs-target="#tab1"
+                        role="tab"
+                        aria-selected="true">
+
+                    <span class="position-relative d-block">
+                        ФИНАНСЫ
+                    <span class="badge rounded-pill bg-success dashboard__header__count-event">2</span>
+                        </span>
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link  text-uppercase"
+                        data-bs-toggle="pill"
+                        data-bs-target="#tab2"
+                        role="tab"
+                        aria-selected="true">
+                        ЗАЯВКИ
+                </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link text-uppercase"
+                        data-bs-toggle="pill"
+                        data-bs-target="#tab5"
+                        role="tab"
+                        aria-selected="false">
+                    Заявки по металлам
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel"
+                 tabindex="0">
+                <div class="top-table-filter">
+                    <div class="d-flex align-items-center">
+                        <div class="top-table-filter__views-page d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Строк на странице</span>
+                            <select class="input-field__select input-field__select--min">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="top-table-filter__views d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Показаны</span>
+                            <span class="top-table-filter__value me-2 text-nowrap">1 — 10</span>
+                            <span class="top-table-filter__label me-2 text-nowrap">из 505</span>
+                        </div>
+                        <div class="top-table-filter__search">
+                            <input type="text" class="input-field__text input-field__text--mini placeholder-shown"
+                                   placeholder="Поиск">
+                            <button class="top-table-filter__search__submit" type="submit">
+                                <svg width="21" height="20">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="" class="top-table-filter__fullscreen">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-fullscreen"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashboard__card__table-box">
+
+                    <table class="table table-hover table-borderless table-striped table-filter">
+                        <thead>
+                        <tr id="accordionFilter">
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_1"
+                                            aria-expanded="false">
+                                        Валюта
+                                    </button>
+                                    <div id="col1_1" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col1_1"
+                                                        aria-expanded="false">
+                                                    Валюта
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_2"
+                                            aria-expanded="false">
+                                        Остаток
+                                    </button>
+                                    <div id="col1_2" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col1_2"
+                                                        aria-expanded="false">
+                                                    Остаток
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_3"
+                                            aria-expanded="false">
+                                        К поступлению
+                                    </button>
+                                    <div id="col1_3" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col1_3"
+                                                        aria-expanded="false">
+                                                    К поступлению
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#colm_4"
+                                            aria-expanded="false">
+                                        К списанию
+                                    </button>
+                                    <div id="colm_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#colm_4"
+                                                        aria-expanded="false">
+                                                    К списанию
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_4"
+                                            aria-expanded="false">
+                                        Итого
+                                    </button>
+                                    <div id="col1_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col1_4"
+                                                        aria-expanded="false">
+                                                    Итого
+                                                </button>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td style="width: 50px;" class="text-center">
+                                <a href="" class="ico-link active d-inline-flex">
+                                    <svg width="24" height="16">
+                                        <use xlink:href="#svg-orderby"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+
+                            <td></td>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                100.000.000 ₽
+                            </td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                100.000.000 ₽
+                            </td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                100.000.000 ₽
+                            </td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                100.000.000 ₽
+                            </td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="dashboard__card__table-box__footer">
+                        <ul class="nav nav--pagination">
+                            <li><span class="page active">1</span></li>
+                            <li><a class="page" href="">2</a></li>
+                            <li><a class="page" href="">3</a></li>
+                            <li><span class="dots">. . .</span></li>
+                            <li><a class="page" href="">10</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel"
+                 tabindex="0">
+                <div class="top-table-filter">
+                    <div class="d-flex align-items-center">
+                        <div class="top-table-filter__views-page d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Строк на странице</span>
+                            <select class="input-field__select input-field__select--min">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="top-table-filter__views d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Показаны</span>
+                            <span class="top-table-filter__value me-2 text-nowrap">1 — 10</span>
+                            <span class="top-table-filter__label me-2 text-nowrap">из 505</span>
+                        </div>
+                        <div class="top-table-filter__search">
+                            <input type="text" class="input-field__text input-field__text--mini placeholder-shown"
+                                   placeholder="Поиск">
+                            <button class="top-table-filter__search__submit" type="submit">
+                                <svg width="21" height="20">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="" class="top-table-filter__fullscreen">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-fullscreen"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashboard__card__table-box">
+
+                    <table class="table table-hover table-borderless table-striped table-filter">
+                        <thead>
+                        <tr id="accordionFilter2">
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col2_1"
+                                            aria-expanded="false">
+                                        Стадия
+                                    </button>
+                                    <div id="col2_1" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col2_1"
+                                                        aria-expanded="false">
+                                                    Стадия
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#status"
+                                            aria-expanded="false">
+                                        Статус
+                                    </button>
+                                    <div id="status" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#status"
+                                                        aria-expanded="false">
+                                                    Статус
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                            <form action="" class="table-filter__dropdown__search">
+                                                <div class="input-field input-field--left-ico">
+                                                    <input type="text"
+                                                           class="input-field__text input-field__text--mini placeholder-shown"
+                                                           placeholder="Найти">
+                                                </div>
+                                                <button class="table-filter__dropdown__search__submit" type="submit">
+                                                    <svg width="21" height="20">
+                                                        <use xlink:href="#svg-search"></use>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                            <div class="pb-3">
+                                                <button class="btn btn-sm btn-primary radius-10">выбрать все</button>
+                                            </div>
+                                            <div class="table-filter__dropdown__list">
+                                                <ul class="nav flex-column">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck1">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck1">
+                                                                Черновик
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck2">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck2">
+                                                                Черновик
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck3">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck3">
+                                                                Черновик
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck4">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck4">
+                                                                Черновик
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck5">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck5">
+                                                                Черновик
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck6">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck6">
+                                                                ИП Иванов Иван
+                                                                Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#number"
+                                            aria-expanded="false">
+                                        №
+                                    </button>
+                                    <div id="number" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#number"
+                                                        aria-expanded="false">
+                                                    №
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#dateFilter2"
+                                            aria-expanded="false">
+                                        Дата
+                                    </button>
+                                    <div id="dateFilter" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#dateFilter"
+                                                        aria-expanded="false">
+                                                    Дата
+                                                </button>
+                                                <span class="count">сегодня 10.01.2023</span>
+                                            </div>
+                                            <div class="table-filter__dropdown__date">
+                                                <div class="table-filter__dropdown__date__caption">
+                                                    Период
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="date_filter" type="text"
+                                                                   class="input-field__text input-field__text--date"
+                                                                   placeholder="с">
+                                                            <label for="date_filter"
+                                                                   class="input-field__label">с</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="date_filter2" type="text"
+                                                                   class="input-field__text input-field__text--date"
+                                                                   placeholder="по">
+                                                            <label for="date_filter2"
+                                                                   class="input-field__label">по</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <button class="btn d-inline-flex align-items-center btn-sm btn-primary">
+                                    Валюта: <span class="color-silver ms-1">3</span>
+                                    <span class="ms-2">
+                                        <svg width="8" height="8">
+                                            <use xlink:href="#svg-close"></use>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#amountFilter2"
+                                            aria-expanded="false">
+                                        Сумма
+                                    </button>
+                                    <div id="amountFilter" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#amountFilter"
+                                                        aria-expanded="false">
+                                                    Сумма
+                                                </button>
+                                            </div>
+
+                                            <div class="table-filter__dropdown__date">
+
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="price_filter" type="text"
+                                                                   class="input-field__text input-field__text--date"
+                                                                   placeholder="от">
+                                                            <label for="price_filter"
+                                                                   class="input-field__label">от</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="input-field h-40">
+                                                            <input id="price_filter2" type="text"
+                                                                   class="input-field__text input-field__text--date"
+                                                                   placeholder="до">
+                                                            <label for="price_filter2"
+                                                                   class="input-field__label">до</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#cityFilter"
+                                            aria-expanded="false">
+                                        Страна
+                                    </button>
+                                    <div id="cityFilter" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#cityFilter"
+                                                        aria-expanded="false">
+                                                    Страна
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#recipientFilter"
+                                            aria-expanded="false">
+                                        Получатель
+                                    </button>
+                                    <div id="recipientFilter" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#recipientFilter"
+                                                        aria-expanded="false">
+                                                    Получатель
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                            <form action="" class="table-filter__dropdown__search">
+                                                <div class="input-field input-field--left-ico">
+                                                    <input type="text"
+                                                           class="input-field__text input-field__text--mini placeholder-shown"
+                                                           placeholder="Найти">
+                                                </div>
+                                                <button class="table-filter__dropdown__search__submit" type="submit">
+                                                    <svg width="21" height="20">
+                                                        <use xlink:href="#svg-search"></use>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                            <div class="pb-3">
+                                                <button class="btn btn-sm btn-primary radius-10">выбрать все</button>
+                                            </div>
+                                            <div class="table-filter__dropdown__list">
+                                                <ul class="nav flex-column">
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck11">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck11">
+                                                                ИП Иванов Иван Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck21">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck21">
+                                                                ИП Иванов Иван Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck31">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck31">
+                                                                ИП Иванов Иван Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck41">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck41">
+                                                                ИП Иванов Иван Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck51">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck51">
+                                                                ИП Иванов Иван Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" value=""
+                                                                   id="flexCheck61">
+                                                            <label class="form-check-label d-flex justify-content-between"
+                                                                   for="flexCheck61">
+                                                                ИП Иванов Иван
+                                                                Иванович
+                                                                <span class="count">11</span>
+                                                            </label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="table-filter__dropdown__footer">
+                                                <button class="btn btn-success">ПРИМЕНИТЬ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col2_9"
+                                            aria-expanded="false">
+                                        Клиент
+                                    </button>
+                                    <div id="col2_9" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col2_9"
+                                                        aria-expanded="false">
+                                                    Клиент
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col2_10"
+                                            aria-expanded="false">
+                                        Платежный<br>
+                                        агент
+                                    </button>
+                                    <div id="col2_10" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col2_10"
+                                                        aria-expanded="false">
+                                                    Платежный<br>
+                                                    агент
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col2_11"
+                                            aria-expanded="false">
+                                        Менеджер
+                                    </button>
+                                    <div id="col2_11" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter2">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col2_11"
+                                                        aria-expanded="false">
+                                                    Менеджер
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td style="width: 50px;" class="text-center">
+                                <a href="" class="ico-link active d-inline-flex">
+                                    <svg width="24" height="16">
+                                        <use xlink:href="#svg-orderby"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>Клиент</td>
+                            <td>
+                                <span class="btn btn-sm btn-outline-warning">Конвертация</span>
+                            </td>
+                            <td>125</td>
+                            <td>125</td>
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                Иванов Александр
+                            </td>
+                            <td>Иванов Александр</td>
+                            <td>Иванов Александр</td>
+                            <td>
+                                <a href="" class="color-silver">
+                                    <svg width="26" height="22">
+                                        <use xlink:href="#svg-comment"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Фин. менеджер</td>
+                            <td><span class="btn btn-sm btn-outline-success">Заявка отправлена</span></td>
+                            <td>125</td>
+                            <td>125</td>
+                            <td>Рубли (RUB)</td>
+                            <td>100.000.000 ₽</td>
+                            <td>Армения</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>
+                                Иванов Иван
+                            </td>
+                            <td>Иванов Александр</td>
+                            <td>Иванов Александр</td>
+                            <td></td>
+                            <td>
+                                <a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                    <svg width="4" height="20">
+                                        <use xlink:href="#svg-td-order"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                    <div class="dashboard__card__table-box__footer">
+                        <ul class="nav nav--pagination">
+                            <li><span class="page active">1</span></li>
+                            <li><a class="page" href="">2</a></li>
+                            <li><a class="page" href="">3</a></li>
+                            <li><span class="dots">. . .</span></li>
+                            <li><a class="page" href="">10</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="pills-contact-tab"
+                 tabindex="0">
+                <div class="top-table-filter">
+                    <div class="d-flex align-items-center">
+                        <div class="top-table-filter__views-page d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Строк на странице</span>
+                            <select class="input-field__select input-field__select--min">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+                        <div class="top-table-filter__views d-flex align-items-center">
+                            <span class="top-table-filter__label me-2 text-nowrap">Показаны</span>
+                            <span class="top-table-filter__value me-2 text-nowrap">1 — 10</span>
+                            <span class="top-table-filter__label me-2 text-nowrap">из 505</span>
+                        </div>
+                        <div class="top-table-filter__search">
+                            <input type="text" class="input-field__text input-field__text--mini placeholder-shown"
+                                   placeholder="Поиск">
+                            <button class="top-table-filter__search__submit" type="submit">
+                                <svg width="21" height="20">
+                                    <use xlink:href="#svg-search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <a href="" class="top-table-filter__fullscreen">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-fullscreen"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="dashboard__card__table-box">
+
+                    <table class="table table-hover table-borderless table-striped table-filter">
+                        <thead>
+                        <tr id="accordionFilter5">
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col10_4"
+                                            aria-expanded="false">
+                                        Статус
+                                    </button>
+                                    <div id="col10_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col10_4"
+                                                        aria-expanded="false">
+                                                    Статус
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_5"
+                                            aria-expanded="false">
+                                        №
+                                    </button>
+                                    <div id="col1_5" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col2_4"
+                                            aria-expanded="false">
+                                        Дата
+                                    </button>
+                                    <div id="col2_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col2_4"
+                                                        aria-expanded="false">
+                                                    Дата
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col3_4"
+                                            aria-expanded="false">
+                                        Кол-во<br>
+                                        ресурс
+                                    </button>
+                                    <div id="col3_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col3_4"
+                                                        aria-expanded="false">
+                                                    Кол-во<br>
+                                                    ресурс
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col4_4"
+                                            aria-expanded="false">
+                                        Валюта
+                                    </button>
+                                    <div id="col4_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col4_4"
+                                                        aria-expanded="false">
+                                                    Валюта
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col5_4"
+                                            aria-expanded="false">
+                                        Сумма
+                                    </button>
+                                    <div id="col5_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col5_4"
+                                                        aria-expanded="false">
+                                                    Сумма
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col6_4"
+                                            aria-expanded="false">
+                                        Страна<br>
+                                        отправления
+                                    </button>
+                                    <div id="col6_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col6_4"
+                                                        aria-expanded="false">
+                                                    Страна<br>
+                                                    отправления
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col7_4"
+                                            aria-expanded="false">
+                                        Страна<br>
+                                        получения
+                                    </button>
+                                    <div id="col7_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col7_4"
+                                                        aria-expanded="false">
+                                                    Страна<br>
+                                                    получения
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col8_4"
+                                            aria-expanded="false">
+                                        Поставщик
+                                    </button>
+                                    <div id="col8_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col8_4"
+                                                        aria-expanded="false">
+                                                    Поставщик
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="accordion-item table-filter__dropdown">
+                                    <button class="dropdown-toggle collapsed"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col9_4"
+                                            aria-expanded="false">
+                                        Покупатель
+                                    </button>
+                                    <div id="col9_4" class="accordion-collapse collapse"
+                                         data-bs-parent="#accordionFilter4">
+                                        <div class="table-filter__dropdown__body">
+                                            <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                                <button class="dropdown-toggle active"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#col9_4"
+                                                        aria-expanded="false">
+                                                    Покупатель
+                                                </button>
+                                                <span class="count">11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td style="width: 50px;" class="text-center">
+                                <a href="" class="ico-link active d-inline-flex">
+                                    <svg width="24" height="16">
+                                        <use xlink:href="#svg-orderby"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="table-filter__col-order">
+                                    <a href="" class="mb-2 d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-top"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="" class="d-block">
+                                        <svg width="10" height="6">
+                                            <use xlink:href="#svg-bottom"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td><span class="btn btn-sm btn-outline-primary">Фиксация курса</span></td>
+                            <td>125</td>
+                            <td>ООО Вихрь</td>
+                            <td>1.000.000 ₽</td>
+                            <td>Рубли (RUB)</td>
+                            <td>400.000 ₽</td>
+                            <td>600.000 ₽</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>SSAWEAR</td>
+                            <td><a href="" class="color-silver">
+                                <svg width="26" height="22">
+                                    <use xlink:href="#svg-comment"></use>
+                                </svg>
+                            </a></td>
+                            <td><a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                <svg width="4" height="20">
+                                    <use xlink:href="#svg-td-order"></use>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tr>
+                            <td><span class="btn btn-sm btn-outline-danger">Отменен</span></td>
+                            <td>1251</td>
+                            <td>ИП Иванов Иван Иванович</td>
+                            <td>1.000.000 ₽</td>
+                            <td>Рубли (RUB)</td>
+                            <td>400.000 ₽</td>
+                            <td>600.000 ₽</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>SSAWEAR</td>
+                            <td><a href="" class="color-silver">
+                                <svg width="26" height="22">
+                                    <use xlink:href="#svg-comment"></use>
+                                </svg>
+                            </a></td>
+                            <td><a href=""
+                                   class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                                <svg width="4" height="20">
+                                    <use xlink:href="#svg-td-order"></use>
+                                </svg>
+                            </a></td>
+                        </tr>
+                        <tbody>
+                        </tbody>
+                    </table>
+
+                    <div class="dashboard__card__table-box__footer">
+                        <ul class="nav nav--pagination">
+                            <li><span class="page active">1</span></li>
+                            <li><a class="page" href="">2</a></li>
+                            <li><a class="page" href="">3</a></li>
+                            <li><span class="dots">. . .</span></li>
+                            <li><a class="page" href="">10</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+        </div> <!-- dashboard__main-->
+    </div><!-- dashboard-->
+
+</div><!-- end main-->
+<div style="display: none">
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <symbol id="svg-nav-application" viewBox="0 0 20 22" fill="none">
+            <path d="M17.6112 14.0338L18.8132 14.7548C18.8873 14.7992 18.9487 14.8621 18.9913 14.9372C19.0339 15.0124 19.0564 15.0974 19.0564 15.1838C19.0564 15.2702 19.0339 15.3552 18.9913 15.4304C18.9487 15.5056 18.8873 15.5684 18.8132 15.6128L10.0432 20.8748C9.88764 20.9683 9.70962 21.0176 9.52818 21.0176C9.34673 21.0176 9.16871 20.9683 9.01318 20.8748L0.243175 15.6128C0.169021 15.5684 0.107641 15.5056 0.0650215 15.4304C0.0224023 15.3552 0 15.2702 0 15.1838C0 15.0974 0.0224023 15.0124 0.0650215 14.9372C0.107641 14.8621 0.169021 14.7992 0.243175 14.7548L1.44518 14.0338L9.52818 18.8838L17.6112 14.0338ZM17.6112 9.33381L18.8132 10.0548C18.8873 10.0992 18.9487 10.1621 18.9913 10.2372C19.0339 10.3124 19.0564 10.3974 19.0564 10.4838C19.0564 10.5702 19.0339 10.6552 18.9913 10.7304C18.9487 10.8056 18.8873 10.8684 18.8132 10.9128L9.52818 16.4838L0.243175 10.9128C0.169021 10.8684 0.107641 10.8056 0.0650215 10.7304C0.0224023 10.6552 0 10.5702 0 10.4838C0 10.3974 0.0224023 10.3124 0.0650215 10.2372C0.107641 10.1621 0.169021 10.0992 0.243175 10.0548L1.44518 9.33381L9.52818 14.1838L17.6112 9.33381ZM10.0422 0.14281L18.8132 5.40481C18.8873 5.4492 18.9487 5.51206 18.9913 5.58725C19.0339 5.66243 19.0564 5.74738 19.0564 5.83381C19.0564 5.92024 19.0339 6.00519 18.9913 6.08037C18.9487 6.15556 18.8873 6.21842 18.8132 6.26281L9.52818 11.8338L0.243175 6.26281C0.169021 6.21842 0.107641 6.15556 0.0650215 6.08037C0.0224023 6.00519 0 5.92024 0 5.83381C0 5.74738 0.0224023 5.66243 0.0650215 5.58725C0.107641 5.51206 0.169021 5.4492 0.243175 5.40481L9.01318 0.14281C9.16871 0.0493664 9.34673 0 9.52818 0C9.70962 0 9.88764 0.0493664 10.0432 0.14281H10.0422ZM9.52818 2.16581L3.41518 5.83381L9.52818 9.50181L15.6412 5.83381L9.52818 2.16581Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-payments" viewBox="0 0 20 18" fill="none">
+            <path d="M8 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H8C8 0.530433 8.21071 1.03914 8.58579 1.41421C8.96086 1.78929 9.46957 2 10 2C10.5304 2 11.0391 1.78929 11.4142 1.41421C11.7893 1.03914 12 0.530433 12 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H12C12 17.4696 11.7893 16.9609 11.4142 16.5858C11.0391 16.2107 10.5304 16 10 16C9.46957 16 8.96086 16.2107 8.58579 16.5858C8.21071 16.9609 8 17.4696 8 18ZM6.535 16C6.88599 15.3917 7.39105 14.8865 7.99934 14.5354C8.60762 14.1843 9.29766 13.9996 10 14C11.48 14 12.773 14.804 13.465 16H18V2H13.465C13.114 2.60835 12.6089 3.11349 12.0007 3.46459C11.3924 3.8157 10.7023 4.00036 10 4C9.29766 4.00036 8.60762 3.8157 7.99934 3.46459C7.39105 3.11349 6.88599 2.60835 6.535 2H2V16H6.535ZM4 5H6V13H4V5ZM14 5H16V13H14V5Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-translations" viewBox="0 0 20 18" fill="none">
+            <path d="M2 2V16H18V2H2ZM1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM10 6V3L15 8H6V6H10ZM5 10H14V12H10V15L5 10Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-refunds" viewBox="0 0 20 18" fill="none">
+            <path d="M18 5V2H2V5H18ZM18 7H2V16H18V7ZM1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM9 11H15V13H4.5L9 8.5V11Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-company" viewBox="0 0 20 20" fill="none">
+            <path d="M5 4V1C5 0.734784 5.10536 0.48043 5.29289 0.292893C5.48043 0.105357 5.73478 0 6 0H14C14.2652 0 14.5196 0.105357 14.7071 0.292893C14.8946 0.48043 15 0.734784 15 1V4H19C19.2652 4 19.5196 4.10536 19.7071 4.29289C19.8946 4.48043 20 4.73478 20 5V19C20 19.2652 19.8946 19.5196 19.7071 19.7071C19.5196 19.8946 19.2652 20 19 20H1C0.734784 20 0.48043 19.8946 0.292893 19.7071C0.105357 19.5196 0 19.2652 0 19V5C0 4.73478 0.105357 4.48043 0.292893 4.29289C0.48043 4.10536 0.734784 4 1 4H5ZM7 12H2V18H18V12H13V15H7V12ZM18 6H2V10H7V8H13V10H18V6ZM9 10V13H11V10H9ZM7 2V4H13V2H7Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-doc" viewBox="0 0 18 20" fill="none">
+            <path d="M0 0.992C0 0.444 0.445 0 0.993 0H17.007C17.2696 0.00183004 17.521 0.1069 17.7068 0.292513C17.8926 0.478126 17.9979 0.72938 18 0.992V19.008C17.9997 19.2712 17.895 19.5235 17.7088 19.7095C17.5226 19.8955 17.2702 20 17.007 20H0.993C0.730378 19.9982 0.479017 19.8931 0.293218 19.7075C0.107418 19.5219 0.00209465 19.2706 0 19.008V0.992ZM16 9V2H2V9H16ZM16 11H2V18H16V11ZM6 4H12V6H6V4ZM6 13H12V15H6V13Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-opportunities" viewBox="0 0 20 20" fill="none">
+            <path d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM7.71 17.667C6.72341 15.5743 6.15187 13.3102 6.027 11H2.062C2.25659 12.5389 2.89392 13.9882 3.89657 15.1717C4.89922 16.3552 6.22401 17.2221 7.71 17.667ZM8.03 11C8.181 13.439 8.878 15.73 10 17.752C11.1523 15.6766 11.8254 13.3695 11.97 11H8.03ZM17.938 11H13.973C13.8481 13.3102 13.2766 15.5743 12.29 17.667C13.776 17.2221 15.1008 16.3552 16.1034 15.1717C17.1061 13.9882 17.7434 12.5389 17.938 11ZM2.062 9H6.027C6.15187 6.68979 6.72341 4.42569 7.71 2.333C6.22401 2.77788 4.89922 3.64475 3.89657 4.8283C2.89392 6.01184 2.25659 7.4611 2.062 9ZM8.031 9H11.969C11.8248 6.6306 11.152 4.32353 10 2.248C8.84768 4.32345 8.17456 6.63052 8.03 9H8.031ZM12.29 2.333C13.2766 4.42569 13.8481 6.68979 13.973 9H17.938C17.7434 7.4611 17.1061 6.01184 16.1034 4.8283C15.1008 3.64475 13.776 2.77788 12.29 2.333Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-rating" viewBox="0 0 20 18" fill="none">
+            <path d="M0 10H6V18H0V10ZM14 5H20V18H14V5ZM7 0H13V18H7V0ZM2 12V16H4V12H2ZM9 2V16H11V2H9ZM16 7V16H18V7H16Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-analytics" viewBox="0 0 20 20" fill="none">
+            <path d="M10 20C4.477 20 0 15.523 0 10C0 5.522 2.943 1.732 7 0.458V2.582C5.28092 3.28005 3.8578 4.55371 2.97406 6.18512C2.09032 7.81652 1.80088 9.70431 2.15525 11.5255C2.50963 13.3468 3.48579 14.9883 4.91676 16.1693C6.34774 17.3503 8.14461 17.9975 10 18C11.5938 18 13.1513 17.524 14.4728 16.6332C15.7944 15.7424 16.82 14.4773 17.418 13H19.542C18.268 17.057 14.478 20 10 20ZM19.95 11H9V0.05C9.329 0.017 9.663 0 10 0C15.523 0 20 4.477 20 10C20 10.337 19.983 10.671 19.95 11ZM11 2.062V9H17.938C17.7154 7.23761 16.9129 5.59934 15.6568 4.34324C14.4007 3.08713 12.7624 2.28459 11 2.062Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-right" viewBox="0 0 9 14" fill="none">
+            <path opacity="0.5"
+                  d="M7.71021 6.28953L1.71458 0.293904C1.46112 0.0404438 1.09171 -0.0585584 0.7454 0.0341979C0.399199 0.126943 0.12865 0.397479 0.0359178 0.74368C-0.0568278 1.08999 0.0421632 1.4594 0.295624 1.71287L5.59176 6.99914L0.295624 12.2854C0.10649 12.4731 0 12.7284 0 12.9949C0 13.2614 0.106485 13.5167 0.295624 13.7044C0.4833 13.8935 0.738634 14 1.00511 14C1.27158 14 1.52691 13.8935 1.71459 13.7044L7.71021 7.70875C7.89934 7.52108 8.00583 7.26574 8.00583 6.99927C8.00583 6.7328 7.89935 6.47747 7.71021 6.28979L7.71021 6.28953Z"
+                  fill="white"/>
+        </symbol>
+
+        <symbol id="svg-ava-user" width="40" height="40" viewBox="0 0 40 40" fill="none">
+            <path d="M20 0C8.96255 0 0 8.96316 0 20C0 31.0374 8.96316 40 20 40C31.0374 40 40 31.0374 40 20C40 8.96255 31.0374 0 20 0ZM20 1.42865C30.2656 1.42865 38.5718 9.73486 38.5718 20.0004C38.5718 25.949 35.7721 31.226 31.4288 34.6239V27.1403C31.4288 24.7783 29.5051 22.8546 27.1431 22.8546H22.8573V20.6308C24.5577 19.6402 25.7144 17.8193 25.7144 15.7115V12.8545C25.7146 12.5293 25.7146 11.6018 25.7146 11.4286V7.8544C25.7146 7.46002 25.3949 7.14004 25.0002 7.14004H14.2858L14.2861 5.71423C13.507 5.71423 12.8574 6.3638 12.8574 7.14288V11.4286C12.8574 12.2077 13.507 12.8573 14.2861 12.8573V15.7118C14.2861 17.8196 15.4427 19.6405 17.1431 20.6311V22.8549H12.8573C10.4953 22.8549 8.57158 24.7786 8.57158 27.1406V34.6242C4.22817 31.2262 1.42864 25.9489 1.42864 20.0001C1.42864 9.73456 9.73485 1.42835 20.0004 1.42835L20 1.42865ZM14.2856 8.56917H24.2856V11.4097L24.2771 11.4237C24.2728 11.4307 24.2785 11.4272 24.2799 11.4293L14.286 11.4291L14.2856 8.56917ZM15.7142 12.8606H24.286V15.7122C24.286 18.0988 22.3869 19.998 20.0002 19.998C17.6136 19.998 15.7145 18.0988 15.7145 15.7122L15.7142 12.8606ZM18.5713 21.223C19.0307 21.3424 19.5035 21.4267 19.9999 21.4267C20.4964 21.4267 20.969 21.3424 21.4286 21.223V22.8554H18.5715L18.5713 21.223ZM12.8569 24.2838H27.1428C28.738 24.2838 29.9998 25.5456 29.9998 27.1409V35.637C29.0958 36.216 28.1449 36.729 27.1428 37.1465V28.5693H25.7141V37.668C23.9131 38.2497 21.9962 38.5723 19.9999 38.5723C18.0039 38.5723 16.0868 38.2497 14.2858 37.6682V28.5695H12.8571V37.1468C11.8548 36.7292 10.9041 36.2162 9.99982 35.6373V27.1411C9.99982 25.5459 11.2616 24.2841 12.8569 24.2841V24.2838Z"
+                  fill="#A3AED0"/>
+        </symbol>
+
+        <symbol id="svg-options" viewBox="0 0 27 32" fill="none">
+            <path d="M3.81241 1.00239C3.63704 1.02436 3.49305 1.19383 3.49988 1.37049V19.9525C2.09488 20.1306 1 21.3346 1 22.7856C1 24.2364 2.09507 25.4404 3.49988 25.6187V30.638C3.49711 30.8265 3.66823 31 3.85708 31C4.04575 31 4.21687 30.8267 4.21429 30.638V25.6187C5.61928 25.4404 6.71416 24.2364 6.71416 22.7856C6.71416 21.3348 5.61909 20.1308 4.21429 19.9525V1.37049C4.22241 1.16411 4.0175 0.976551 3.81259 1.00239H3.81241ZM13.455 1.00239C13.2796 1.02436 13.1356 1.19383 13.1425 1.37049V4.96194C11.7375 5.14008 10.6426 6.34406 10.6426 7.79503C10.6426 9.24582 11.7377 10.4498 13.1425 10.6281V30.6378C13.1397 30.8263 13.3108 30.9998 13.4997 30.9998C13.6884 30.9998 13.8595 30.8265 13.8569 30.6378V10.6281C15.2619 10.45 16.3568 9.24601 16.3568 7.79503C16.3568 6.34425 15.2617 5.14025 13.8569 4.96194V1.37049C13.865 1.16411 13.6601 0.976551 13.4552 1.00239H13.455ZM23.0976 1.00239C22.9222 1.02436 22.7782 1.19383 22.7851 1.37049V13.1709C21.3801 13.3491 20.2852 14.553 20.2852 16.004C20.2852 17.4548 21.3803 18.6588 22.7851 18.8371V30.6375C22.7823 30.826 22.9534 30.9995 23.1423 30.9995C23.331 30.9995 23.5021 30.8262 23.4995 30.6375V18.8371C24.9045 18.6588 25.9994 17.4548 25.9994 16.004C25.9994 14.5532 24.9043 13.3492 23.4995 13.1709V1.37049C23.5076 1.16411 23.3027 0.976551 23.0978 1.00239H23.0976ZM13.4994 5.65347C14.6872 5.65347 15.6423 6.60804 15.6423 7.79503C15.6423 8.98202 14.6872 9.93659 13.4994 9.93659C12.3117 9.93659 11.3565 8.98202 11.3565 7.79503C11.3565 6.60804 12.3117 5.65347 13.4994 5.65347ZM23.142 13.8627C24.3298 13.8627 25.2849 14.8173 25.2849 16.0043C25.2849 17.1913 24.3298 18.1458 23.142 18.1458C21.9543 18.1458 20.9992 17.1913 20.9992 16.0043C20.9992 14.8173 21.9543 13.8627 23.142 13.8627ZM3.85636 20.6443C5.0441 20.6443 5.99924 21.5989 5.99924 22.7859C5.99924 23.9729 5.0441 24.9274 3.85636 24.9274C2.66861 24.9274 1.71347 23.9729 1.71347 22.7859C1.71347 21.5989 2.66861 20.6443 3.85636 20.6443Z"
+                  fill="currentColor" stroke="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-event" viewBox="0 0 26 30" fill="none">
+            <path d="M23.5301 23.8501C22.7279 23.8501 22.1931 23.7164 22.1931 21.711V13.6894C22.1931 9.01012 18.8508 4.86562 14.5726 4.19716C14.0378 4.06346 13.503 4.06346 12.9683 4.06346C12.4335 4.06346 11.8987 4.06346 11.3639 4.19716C6.95206 4.86562 3.74342 9.01012 3.74342 13.6894V21.711C3.74342 23.7164 3.20864 23.8501 2.40648 23.8501H0V25.5881H25.8028V23.8501H23.5301ZM5.48143 21.711V13.6894C5.48143 9.81228 8.1553 6.46995 11.6313 5.93517C12.0324 5.80148 12.4335 5.80148 12.9683 5.80148C13.3693 5.80148 13.7704 5.80148 14.3052 5.93517C17.7812 6.46995 20.4551 9.81228 20.4551 13.6894V21.711C20.4551 22.5132 20.5888 23.3153 20.8562 23.8501H5.21405C5.34774 23.3153 5.48143 22.6469 5.48143 21.711Z"
+                  fill="currentColor"/>
+            <path d="M15.5084 30C16.0432 30 16.4443 29.5989 16.4443 29.0641C16.4443 28.5294 16.0432 28.1283 15.5084 28.1283H10.4281C9.89332 28.1283 9.49224 28.5294 9.49224 29.0641C9.49224 29.5989 9.89332 30 10.4281 30H15.5084Z"
+                  fill="currentColor"/>
+            <path d="M12.2998 0.320046C12.1661 0.453739 12.0324 0.721126 12.0324 0.988513C12.0324 1.2559 12.1661 1.52329 12.2998 1.65698C12.5672 1.65698 12.7009 1.79067 12.9683 1.79067C13.2357 1.79067 13.3693 1.65698 13.6367 1.52329C13.7704 1.38959 13.9041 1.12221 13.9041 0.85482C13.9041 0.587433 13.7704 0.453739 13.6367 0.186352C13.2357 -0.0810347 12.7009 -0.0810347 12.2998 0.320046Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-exit" viewBox="0 0 27 30" fill="none">
+            <path d="M0.617866 0.000741909C0.448307 0.0167212 0.290952 0.0955067 0.176554 0.221676C0.0622594 0.347845 -0.000771244 0.512286 7.12397e-06 0.682532V23.6393C-0.000214796 23.7733 0.0391783 23.9044 0.113083 24.0161C0.186989 24.1279 0.292074 24.2154 0.415482 24.2678L14.0511 29.9459C14.2618 30.0352 14.5033 30.0129 14.6942 29.8865C14.8849 29.76 14.9994 29.5463 14.9992 29.3174V24.204H18.0672C18.248 24.204 18.4215 24.1321 18.5493 24.0043C18.6771 23.8764 18.749 23.703 18.749 23.5222V0.682544C18.749 0.501778 18.6771 0.32833 18.5493 0.200495C18.4215 0.0726614 18.248 0.000756213 18.0672 0.000756213H0.681803C0.660498 -0.000242484 0.639172 -0.000256788 0.617866 0.000741909ZM3.87764 1.36431H17.3854V22.8404H14.9992V6.81856C14.9982 6.68762 14.9595 6.55967 14.8877 6.45003C14.8159 6.3405 14.7141 6.25395 14.5944 6.20069L3.87764 1.36431ZM1.36357 1.7265L13.6356 7.25518V28.2944L1.36357 23.181V1.7265ZM22.4562 8.17161C22.2712 8.17783 22.0968 8.25894 21.9727 8.39632C21.8487 8.53381 21.786 8.71568 21.7988 8.90033C21.8117 9.08498 21.8989 9.25642 22.0407 9.37539L24.1287 11.2503H20.7942C20.7729 11.2493 20.7516 11.2493 20.7303 11.2503C20.5494 11.2587 20.3794 11.3387 20.2574 11.4726C20.1356 11.6064 20.0718 11.7832 20.0803 11.964C20.0888 12.1449 20.1688 12.3149 20.3026 12.4369C20.4365 12.5587 20.6133 12.6224 20.7942 12.6139H24.1287L22.0407 14.4888C21.8581 14.6524 21.7765 14.9011 21.8269 15.1412C21.8773 15.3812 22.0519 15.5761 22.285 15.6525C22.5181 15.7288 22.7742 15.6751 22.9568 15.5115L26.3658 12.4434C26.5125 12.314 26.5966 12.1277 26.5966 11.9321C26.5966 11.7365 26.5125 11.5502 26.3658 11.4208L22.9568 8.35274C22.8214 8.22702 22.6407 8.16166 22.4562 8.17164L22.4562 8.17161ZM9.14014 13.6367C8.93518 13.6536 8.74897 13.7623 8.63312 13.9322C8.51738 14.1022 8.48442 14.3152 8.54357 14.5122C8.60261 14.7092 8.74753 14.8688 8.93773 14.947L10.9085 15.7885V17.0456C10.906 17.2281 10.9766 17.404 11.1048 17.5339C11.2329 17.6639 11.4077 17.737 11.5903 17.737C11.7728 17.737 11.9477 17.6639 12.0758 17.5339C12.2039 17.404 12.2746 17.2281 12.2721 17.0456V15.3411C12.2723 15.2071 12.2329 15.076 12.159 14.9643C12.0851 14.8525 11.98 14.765 11.8566 14.7126L9.47037 13.6899C9.36639 13.645 9.25288 13.6267 9.14014 13.6367Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-info" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M14.2892 2.57107C11.635 1.03872 8.36516 1.03872 5.71092 2.57107L5.71092 2.57107C3.05679 4.10332 1.42181 6.93546 1.42181 10C1.42181 13.0645 3.05671 15.8965 5.71094 17.4289C8.36518 18.9613 11.635 18.9613 14.2892 17.4289L14.6446 18.0446L14.2892 17.4289C16.9433 15.8967 18.5783 13.0648 18.5783 10C18.5783 6.93547 16.9434 4.10349 14.2892 2.57107ZM5.00005 1.33973C8.09418 -0.446576 11.9059 -0.446576 15.0001 1.33973L15.0001 1.33974C18.0942 3.12615 20.0001 6.42752 20.0001 10C20.0001 13.5727 18.0942 16.874 15.0001 18.6603C11.9059 20.4466 8.09418 20.4466 5.00005 18.6603L5.00003 18.6603C1.90588 16.8738 0 13.5725 0 10C0 6.42753 1.90594 3.12598 5.00005 1.33973ZM10.0001 5.84357C8.87135 5.84357 7.95503 6.7599 7.95503 7.88861H6.53322C6.53322 5.97465 8.08611 4.42176 10.0001 4.42176C11.914 4.42176 13.4669 5.97465 13.4669 7.88861C13.4669 9.14705 12.7953 10.2501 11.7942 10.8549L11.7699 10.8696L11.745 10.8821C11.745 10.8821 11.7449 10.8821 11.7449 10.8821C11.7444 10.8824 11.7421 10.8836 11.7373 10.8865C11.7296 10.891 11.7209 10.8962 11.7044 10.9064L11.7026 10.9075L11.7008 10.9086C11.1073 11.2689 10.7133 11.9182 10.7133 12.6588H9.29153C9.29153 11.4002 9.96301 10.3013 10.9609 9.69451L10.9641 9.69251C10.9876 9.67803 11.0286 9.65276 11.077 9.62697C11.6584 9.26742 12.0451 8.62263 12.0451 7.88861C12.0451 6.7599 11.1288 5.84357 10.0001 5.84357ZM10.711 13.8863V15.6635H9.28916V13.8863H10.711Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-step-line" viewBox="0 0 251 6" fill="none">
+            <path d="M251 2.99998L246 0.113227L246 5.88673L251 2.99998ZM4.37114e-08 3.5L246.5 3.49998L246.5 2.49998L-4.37114e-08 2.5L4.37114e-08 3.5Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-back" viewBox="0 0 12 20" fill="none">
+            <path d="M10.6585 0.77446L10.6831 0.799232C10.8451 0.971178 10.9357 1.19859 10.9357 1.43534C10.9357 1.68251 10.8369 1.91952 10.6613 2.09386L10.6602 2.09489L3.0951 9.64593L2.74056 9.99981L3.0951 10.3537L10.6602 17.9047L10.6613 17.9058C10.8369 18.0801 10.9357 18.3171 10.9357 18.5643C10.9357 18.8115 10.8369 19.0485 10.6612 19.2228L10.6585 19.2255C10.4842 19.4012 10.2472 19.5 10 19.5C9.75283 19.5 9.51581 19.4012 9.34148 19.2255L9.34011 19.2242L0.775832 10.6599L0.774455 10.6585C0.598769 10.4842 0.5 10.2472 0.5 10C0.5 9.75283 0.598772 9.51581 0.774462 9.34148L0.775829 9.34011L9.34012 0.775832L9.34148 0.774455C9.51581 0.598769 9.75282 0.5 10 0.5C10.2472 0.5 10.4842 0.598772 10.6585 0.77446Z"
+                  fill="currentColor" stroke="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-line-btn" viewBox="0 0 31 6" fill="none">
+            <path d="M31 3L26 0.113249V5.88675L31 3ZM0 3.5H26.5V2.5H0V3.5Z" fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-fullscreen" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M1.25278 14.3827V17.8702L5.93394 13.1891L6.81167 14.0785L2.13051 18.7478H5.62967V20H0.000683332V14.3827H1.2529L1.25278 14.3827ZM18.7477 2.12995L14.0784 6.8111L13.189 5.93337L17.8702 1.25221H14.3827V0H20V5.62899H18.7478V2.12983L18.7477 2.12995ZM2.12994 1.25221L6.8111 5.93337L5.93337 6.8111L1.25221 2.12995V5.6291H0V0.000116666H5.62899V1.25233H2.12983L2.12994 1.25221ZM17.8701 18.7472L13.1889 14.0778L14.0783 13.1885L18.7476 17.8696V14.3821H19.9998V19.9995H14.3825V18.7472L17.8701 18.7472Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-search" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <path d="M11.6956 0C7.11484 0 3.36016 3.72965 3.36016 8.3354C3.36016 10.3879 4.1111 12.2653 5.33765 13.7171L0.206248 18.8235C-0.0690748 19.0988 -0.0690748 19.5494 0.206248 19.7997C0.331404 19.9249 0.531695 20 0.706872 20C0.882057 20 1.05733 19.9249 1.2075 19.7997L6.3389 14.6683C7.79075 15.8949 9.66805 16.6458 11.7206 16.6458C16.3013 16.6708 20.031 12.9162 20.031 8.33544C20.031 3.72969 16.3013 4.16958e-05 11.6956 4.16958e-05L11.6956 0ZM11.6956 15.269C9.79321 15.269 8.06603 14.4931 6.78944 13.2415C5.53788 11.99 4.76193 10.2628 4.76193 8.33542C4.76193 4.50564 7.89083 1.40177 11.6956 1.40177C15.5254 1.40177 18.6292 4.50564 18.6292 8.33542C18.6292 12.1402 15.5254 15.2691 11.6956 15.2691L11.6956 15.269Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-top" viewBox="0 0 10 6" fill="none">
+            <path d="M5.00062 0.78095L4.52877 1.25367L0.752862 5.03663L0.751478 5.03801C0.742424 5.04714 0.730322 5.05208 0.717934 5.05208C0.705535 5.05208 0.693439 5.04714 0.684391 5.03802L0.680737 5.03437C0.671611 5.02531 0.666667 5.01321 0.666667 5.00082C0.666667 4.98842 0.671612 4.97632 0.680731 4.96728L0.682568 4.96545L4.96515 0.682863L4.96697 0.681035C4.97603 0.671909 4.98813 0.666965 5.00052 0.666965C5.01292 0.666965 5.02501 0.671911 5.03406 0.681029L5.22616 0.874619L5.22785 0.874641L9.31866 4.96545C9.33128 4.97807 9.33625 4.99647 9.33161 5.01381L5.00062 0.78095ZM5.00062 0.78095L5.47246 1.25367M5.00062 0.78095L5.47246 1.25367M5.47246 1.25367L9.24792 5.03618C9.24795 5.03621 9.24798 5.03624 9.24801 5.03627C9.26063 5.04882 9.27899 5.05376 9.29631 5.04913L5.47246 1.25367ZM9.29634 5.04912C9.31348 5.04452 9.32699 5.03103 9.33161 5.01384L9.29634 5.04912Z"
+                  fill="currentColor" stroke="currentColor" stroke-width="1.33333"/>
+        </symbol>
+
+        <symbol id="svg-bottom" viewBox="0 0 10 6" fill="none">
+            <path d="M5.00062 4.9378L4.52877 4.46508L0.752862 0.682125L0.751478 0.680739C0.742424 0.67161 0.730322 0.666666 0.717934 0.666666C0.705535 0.666666 0.693439 0.671612 0.684391 0.68073L0.680737 0.684384C0.671611 0.693441 0.666667 0.705543 0.666667 0.717932C0.666667 0.73033 0.671612 0.742426 0.680731 0.751474L0.682568 0.753297L4.96515 5.03589L4.96697 5.03772C4.97603 5.04684 4.98813 5.05179 5.00052 5.05179C5.01292 5.05179 5.02501 5.04684 5.03406 5.03772L5.22616 4.84413L5.22785 4.84411L9.31866 0.753299C9.33128 0.740683 9.33625 0.722278 9.33161 0.704942L5.00062 4.9378ZM5.00062 4.9378L5.47246 4.46508M5.00062 4.9378L5.47246 4.46508M5.47246 4.46508L9.24792 0.682571C9.24795 0.682541 9.24798 0.68251 9.24801 0.682479C9.26063 0.66993 9.27899 0.664993 9.29631 0.669621L5.47246 4.46508ZM9.29634 0.669628C9.31348 0.674229 9.32699 0.68772 9.33161 0.704911L9.29634 0.669628Z"
+                  fill="currentColor" stroke="currentColor" stroke-width="1.33333"/>
+        </symbol>
+
+        <symbol id="svg-close" viewBox="0 0 8 8" fill="none">
+            <path d="M4.93478 4.00915L7.78612 1.1567C8.04069 0.901663 8.04069 0.486477 7.78594 0.231439C7.53884 -0.0156649 7.10782 -0.0156649 6.86068 0.231439L4.00934 3.08382L1.11637 0.190995C0.861711 -0.063665 0.446777 -0.063665 0.191406 0.190995C-0.063802 0.446033 -0.063802 0.861219 0.191406 1.11626L3.0843 4.00923L0.211702 6.88316C-0.0435057 7.1382 -0.0435057 7.55338 0.211702 7.80842C0.33508 7.93209 0.499436 8 0.674378 8C0.848771 8 1.01312 7.93209 1.13705 7.80853L4.0098 4.93467L6.86084 7.78579C6.98457 7.909 7.14893 7.97699 7.32335 7.97699C7.49774 7.97699 7.66209 7.90908 7.78611 7.78552C8.04068 7.53049 8.04068 7.1153 7.78594 6.86026L4.93478 4.00915Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-orderby" viewBox="0 0 24 16" fill="none">
+            <path d="M23.1111 1.18519C23.1111 1.51109 22.8444 1.77778 22.5185 1.77778H0.592593C0.266691 1.77778 0 1.51109 0 1.18519V0.592593C0 0.266691 0.266691 0 0.592593 0H22.5185C22.8444 0 23.1111 0.266691 23.1111 0.592593V1.18519Z"
+                  fill="currentColor"/>
+            <path d="M20.1481 5.92593C20.1481 6.25183 19.8815 6.51852 19.5556 6.51852H3.55556C3.22965 6.51852 2.96296 6.25183 2.96296 5.92593V5.33333C2.96296 5.00743 3.22965 4.74074 3.55556 4.74074H19.5556C19.8815 4.74074 20.1481 5.00743 20.1481 5.33333V5.92593Z"
+                  fill="currentColor"/>
+            <path d="M17.7778 10.6667C17.7778 10.9926 17.5111 11.2593 17.1852 11.2593H5.92593C5.60002 11.2593 5.33333 10.9926 5.33333 10.6667V10.0741C5.33333 9.74817 5.60002 9.48148 5.92593 9.48148H17.1852C17.5111 9.48148 17.7778 9.74817 17.7778 10.0741V10.6667Z"
+                  fill="currentColor"/>
+            <path d="M15.4074 15.4074C15.4074 15.7333 15.1407 16 14.8148 16H8.2963C7.9704 16 7.7037 15.7333 7.7037 15.4074V14.8148C7.7037 14.4889 7.9704 14.2222 8.2963 14.2222H14.8148C15.1407 14.2222 15.4074 14.4889 15.4074 14.8148V15.4074Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-td-order" viewBox="0 0 4 20" fill="none">
+            <path d="M2 4C0.8954 4 0 3.1046 0 2C0 0.8954 0.8954 0 2 0C3.1046 0 4 0.8954 4 2C4 3.1046 3.1046 4 2 4Z"
+                  fill="#1F4DC1"/>
+            <path d="M2 11.7777C0.8954 11.7777 0 10.8822 0 9.77775C0 8.67315 0.8954 7.77775 2 7.77775C3.1046 7.77775 4 8.67315 4 9.77775C4 10.8822 3.1046 11.7777 2 11.7777Z"
+                  fill="#1F4DC1"/>
+            <path d="M2 20C0.8954 20 0 19.1046 0 18C0 16.8954 0.8954 16 2 16C3.1046 16 4 16.8954 4 18C4 19.1046 3.1046 20 2 20Z"
+                  fill="#1F4DC1"/>
+        </symbol>
+
+        <symbol id="svg-save" viewBox="0 0 16 12" fill="none">
+            <path d="M13.9952 0.000640181C15.6596 -0.0409773 16.4919 1.95636 15.3059 3.12147L6.81754 11.6099C6.29736 12.13 5.4236 12.13 4.90345 11.6099L0.596894 7.28239C-1.19235 5.57637 1.44989 2.93399 3.15591 4.72337L5.54845 7.11591C5.71493 7.28238 6.00614 7.28238 6.19338 7.11591L12.7469 0.56234C13.0798 0.208632 13.5167 0.0214257 13.9953 0.000667906L13.9952 0.000640181Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-stars" viewBox="0 0 88 14" fill="none">
+            <path d="M14.5701 5.20354C14.4491 4.95575 14.207 4.83186 13.965 4.83186H9.36617L7.9139 0.371681C7.79288 -0.123894 6.94573 -0.123894 6.70369 0.371681L5.25142 4.83186H0.652587C0.410543 4.83186 0.168499 4.95575 0.0474773 5.20354C-0.0735446 5.45132 0.0474782 5.69911 0.289522 5.9469L4.0412 8.67257L2.58894 13.1327C2.46792 13.3805 2.58894 13.6283 2.83098 13.8761C3.07303 14 3.31507 14 3.55711 13.8761L7.30879 11.1504L11.0605 13.8761C11.1815 14 11.3025 14 11.4235 14C11.5446 14 11.6656 14 11.7866 13.8761C12.0287 13.7522 12.1497 13.5044 12.0287 13.1327L10.5764 8.67257L14.3281 5.9469C14.5701 5.69911 14.6911 5.45132 14.5701 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M32.7234 5.20354C32.6024 4.95575 32.3603 4.83186 32.1183 4.83186H27.5195L26.0672 0.371681C25.9462 -0.123894 25.099 -0.123894 24.857 0.371681L23.4047 4.83186H18.8059C18.5638 4.83186 18.3218 4.95575 18.2008 5.20354C18.0798 5.45132 18.2008 5.69911 18.4428 5.9469L22.1945 8.67257L20.7422 13.1327C20.6212 13.3805 20.7422 13.6283 20.9843 13.8761C21.2263 14 21.4684 14 21.7104 13.8761L25.4621 11.1504L29.2138 13.8761C29.3348 14 29.4558 14 29.5768 14C29.6979 14 29.8189 14 29.9399 13.8761C30.1819 13.7522 30.303 13.5044 30.1819 13.1327L28.7297 8.67257L32.4814 5.9469C32.7234 5.69911 32.8444 5.45132 32.7234 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M50.8767 5.20354C50.7557 4.95575 50.5136 4.83186 50.2716 4.83186H45.6728L44.2205 0.371681C44.0995 -0.123894 43.2523 -0.123894 43.0103 0.371681L41.558 4.83186H36.9592C36.7171 4.83186 36.4751 4.95575 36.3541 5.20354C36.233 5.45132 36.3541 5.69911 36.5961 5.9469L40.3478 8.67257L38.8955 13.1327C38.7745 13.3805 38.8955 13.6283 39.1376 13.8761C39.3796 14 39.6217 14 39.8637 13.8761L43.6154 11.1504L47.3671 13.8761C47.4881 14 47.6091 14 47.7301 14C47.8512 14 47.9722 14 48.0932 13.8761C48.3352 13.7522 48.4563 13.5044 48.3352 13.1327L46.883 8.67257L50.6347 5.9469C50.8767 5.69911 50.9977 5.45132 50.8767 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M69.03 5.20354C68.909 4.95575 68.6669 4.83186 68.4249 4.83186H63.8261L62.3738 0.371681C62.2528 -0.123894 61.4056 -0.123894 61.1636 0.371681L59.7113 4.83186H55.1125C54.8704 4.83186 54.6284 4.95575 54.5074 5.20354C54.3863 5.45132 54.5074 5.69911 54.7494 5.9469L58.5011 8.67257L57.0488 13.1327C56.9278 13.3805 57.0488 13.6283 57.2909 13.8761C57.5329 14 57.775 14 58.017 13.8761L61.7687 11.1504L65.5204 13.8761C65.6414 14 65.7624 14 65.8834 14C66.0045 14 66.1255 14 66.2465 13.8761C66.4885 13.7522 66.6096 13.5044 66.4885 13.1327L65.0363 8.67257L68.7879 5.9469C69.03 5.69911 69.151 5.45132 69.03 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M32.5701 5.20354C32.4491 4.95575 32.207 4.83186 31.965 4.83186H27.3662L25.9139 0.371681C25.7929 -0.123894 24.9457 -0.123894 24.7037 0.371681L23.2514 4.83186H18.6526C18.4105 4.83186 18.1685 4.95575 18.0475 5.20354C17.9265 5.45132 18.0475 5.69911 18.2895 5.9469L22.0412 8.67257L20.5889 13.1327C20.4679 13.3805 20.5889 13.6283 20.831 13.8761C21.073 14 21.3151 14 21.5571 13.8761L25.3088 11.1504L29.0605 13.8761C29.1815 14 29.3025 14 29.4235 14C29.5446 14 29.6656 14 29.7866 13.8761C30.0287 13.7522 30.1497 13.5044 30.0287 13.1327L28.5764 8.67257L32.3281 5.9469C32.5701 5.69911 32.6911 5.45132 32.5701 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M50.7234 5.20354C50.6024 4.95575 50.3603 4.83186 50.1183 4.83186H45.5195L44.0672 0.371681C43.9462 -0.123894 43.099 -0.123894 42.857 0.371681L41.4047 4.83186H36.8059C36.5638 4.83186 36.3218 4.95575 36.2008 5.20354C36.0798 5.45132 36.2008 5.69911 36.4428 5.9469L40.1945 8.67257L38.7422 13.1327C38.6212 13.3805 38.7422 13.6283 38.9843 13.8761C39.2263 14 39.4684 14 39.7104 13.8761L43.4621 11.1504L47.2138 13.8761C47.3348 14 47.4558 14 47.5768 14C47.6979 14 47.8189 14 47.9399 13.8761C48.1819 13.7522 48.303 13.5044 48.1819 13.1327L46.7297 8.67257L50.4814 5.9469C50.7234 5.69911 50.8444 5.45132 50.7234 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M68.8767 5.20354C68.7557 4.95575 68.5136 4.83186 68.2716 4.83186H63.6728L62.2205 0.371681C62.0995 -0.123894 61.2523 -0.123894 61.0103 0.371681L59.558 4.83186H54.9592C54.7171 4.83186 54.4751 4.95575 54.3541 5.20354C54.233 5.45132 54.3541 5.69911 54.5961 5.9469L58.3478 8.67257L56.8955 13.1327C56.7745 13.3805 56.8955 13.6283 57.1376 13.8761C57.3796 14 57.6217 14 57.8637 13.8761L61.6154 11.1504L65.3671 13.8761C65.4881 14 65.6091 14 65.7301 14C65.8512 14 65.9722 14 66.0932 13.8761C66.3352 13.7522 66.4563 13.5044 66.3352 13.1327L64.883 8.67257L68.6347 5.9469C68.8767 5.69911 68.9977 5.45132 68.8767 5.20354Z"
+                  fill="currentColor"/>
+            <path d="M87.03 5.20354C86.909 4.95575 86.6669 4.83186 86.4249 4.83186H81.8261L80.3738 0.371681C80.2528 -0.123894 79.4056 -0.123894 79.1636 0.371681L77.7113 4.83186H73.1125C72.8704 4.83186 72.6284 4.95575 72.5074 5.20354C72.3863 5.45132 72.5074 5.69911 72.7494 5.9469L76.5011 8.67257L75.0488 13.1327C74.9278 13.3805 75.0488 13.6283 75.2909 13.8761C75.5329 14 75.775 14 76.017 13.8761L79.7687 11.1504L83.5204 13.8761C83.6414 14 83.7624 14 83.8834 14C84.0045 14 84.1255 14 84.2465 13.8761C84.4885 13.7522 84.6096 13.5044 84.4885 13.1327L83.0363 8.67257L86.7879 5.9469C87.03 5.69911 87.151 5.45132 87.03 5.20354Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-comment" viewBox="0 0 26 22" fill="none">
+            <path d="M5.19338 0C2.4044 0 0 2.4044 0 5.19338V12.1181C0 14.907 2.4044 17.3114 5.19338 17.3114L7.69399 21.6393C7.98255 22.1202 8.65572 22.1202 8.84807 21.6393C9.71369 20.1966 10.5792 18.754 11.4448 17.3114H19.9084C22.7937 17.3114 25.1017 15.0032 25.1017 12.1181V5.19338C25.1017 2.4044 22.7935 0 19.9084 0H5.19338ZM12.3105 7.21319C11.7334 7.21319 11.1564 7.79023 11.1564 8.36727C11.1564 9.04055 11.7334 9.52135 12.3105 9.52135C12.9838 9.52135 13.4646 9.04041 13.4646 8.36727C13.4646 7.79023 12.9836 7.21319 12.3105 7.21319ZM17.7926 7.21319C17.2156 7.21319 16.6386 7.79023 16.6386 8.36727C16.6386 9.04055 17.2156 9.52135 17.7926 9.52135C18.4659 9.52135 18.9467 9.04041 18.9467 8.36727C18.9467 7.79023 18.4658 7.21319 17.7926 7.21319ZM6.8286 7.21319C6.25156 7.21319 5.67452 7.79023 5.67452 8.36727C5.67452 9.04055 6.25156 9.52135 6.8286 9.52135C7.50188 9.52135 7.98268 9.04041 7.98268 8.36727C7.98268 7.79023 7.50175 7.21319 6.8286 7.21319ZM5.19359 1.34645H19.9085C22.0243 1.34645 23.7554 3.07757 23.7554 5.19338V12.1181C23.7554 14.2339 22.0243 15.965 19.9085 15.965H11.0603C11.0603 15.965 10.4833 16.2535 10.4833 16.3497C9.71391 17.6 9.04063 18.7541 8.27124 20.0044L6.15543 16.3497C5.96308 15.965 5.57839 15.965 5.1937 15.965C3.07789 15.965 1.34677 14.2339 1.34677 12.1181V5.19338C1.34677 3.07757 3.07778 1.34645 5.19359 1.34645Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-home" viewBox="0 0 20 18" fill="none">
+            <path d="M2 2V16H18V2H2ZM1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM12.793 6.793L11 5H16V10L14.207 8.207L10.343 12.071L8.222 9.95L5.393 12.778L3.979 11.364L8.222 7.121L10.343 9.243L12.793 6.793Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-burse" viewBox="0 0 20 22" fill="none">
+            <path
+                    d="M17.6112 14.0338L18.8132 14.7548C18.8873 14.7992 18.9487 14.8621 18.9913 14.9372C19.0339 15.0124 19.0564 15.0974 19.0564 15.1838C19.0564 15.2702 19.0339 15.3552 18.9913 15.4304C18.9487 15.5056 18.8873 15.5684 18.8132 15.6128L10.0432 20.8748C9.88764 20.9683 9.70962 21.0176 9.52818 21.0176C9.34673 21.0176 9.16871 20.9683 9.01318 20.8748L0.243175 15.6128C0.169021 15.5684 0.107641 15.5056 0.0650215 15.4304C0.0224023 15.3552 0 15.2702 0 15.1838C0 15.0974 0.0224023 15.0124 0.0650215 14.9372C0.107641 14.8621 0.169021 14.7992 0.243175 14.7548L1.44518 14.0338L9.52818 18.8838L17.6112 14.0338ZM17.6112 9.33381L18.8132 10.0548C18.8873 10.0992 18.9487 10.1621 18.9913 10.2372C19.0339 10.3124 19.0564 10.3974 19.0564 10.4838C19.0564 10.5702 19.0339 10.6552 18.9913 10.7304C18.9487 10.8056 18.8873 10.8684 18.8132 10.9128L9.52818 16.4838L0.243175 10.9128C0.169021 10.8684 0.107641 10.8056 0.0650215 10.7304C0.0224023 10.6552 0 10.5702 0 10.4838C0 10.3974 0.0224023 10.3124 0.0650215 10.2372C0.107641 10.1621 0.169021 10.0992 0.243175 10.0548L1.44518 9.33381L9.52818 14.1838L17.6112 9.33381ZM10.0422 0.14281L18.8132 5.40481C18.8873 5.4492 18.9487 5.51206 18.9913 5.58725C19.0339 5.66243 19.0564 5.74738 19.0564 5.83381C19.0564 5.92024 19.0339 6.00519 18.9913 6.08037C18.9487 6.15556 18.8873 6.21842 18.8132 6.26281L9.52818 11.8338L0.243175 6.26281C0.169021 6.21842 0.107641 6.15556 0.0650215 6.08037C0.0224023 6.00519 0 5.92024 0 5.83381C0 5.74738 0.0224023 5.66243 0.0650215 5.58725C0.107641 5.51206 0.169021 5.4492 0.243175 5.40481L9.01318 0.14281C9.16871 0.0493664 9.34673 0 9.52818 0C9.70962 0 9.88764 0.0493664 10.0432 0.14281H10.0422ZM9.52818 2.16581L3.41518 5.83381L9.52818 9.50181L15.6412 5.83381L9.52818 2.16581Z"
+                    fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-refunds" viewBox="0 0 20 18" fill="none">
+            <path d="M1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM2 2V16H18V2H2ZM7 8H9V10H7V12H5V10H3V8H5V6H7V8ZM11 8H17V10H11V8Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-ico1" viewBox="0 0 20 18" fill="none">
+            <path d="M2 2V16H18V2H2ZM1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM12.793 6.793L11 5H16V10L14.207 8.207L10.343 12.071L8.222 9.95L5.393 12.778L3.979 11.364L8.222 7.121L10.343 9.243L12.793 6.793Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-nav-ico2" viewBox="0 0 20 18" fill="none">
+            <path d="M1 0H19C19.2652 0 19.5196 0.105357 19.7071 0.292893C19.8946 0.48043 20 0.734784 20 1V17C20 17.2652 19.8946 17.5196 19.7071 17.7071C19.5196 17.8946 19.2652 18 19 18H1C0.734784 18 0.48043 17.8946 0.292893 17.7071C0.105357 17.5196 0 17.2652 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0ZM2 2V16H18V2H2ZM7 8H9V10H7V12H5V10H3V8H5V6H7V8ZM11 8H17V10H11V8Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-modal-close" viewBox="0 0 18 18" fill="none">
+            <path d="M11.1032 9.02059L17.5188 2.60258C18.0915 2.02874 18.0915 1.09457 17.5184 0.520739C16.9624 -0.0352459 15.9926 -0.0352459 15.4365 0.520739L9.02102 6.93859L2.51184 0.429739C1.93885 -0.143246 1.00525 -0.143246 0.430664 0.429739C-0.143555 1.00357 -0.143555 1.93774 0.430664 2.51158L6.93968 9.02076L0.47633 15.4871C-0.0978878 16.0609 -0.0978878 16.9951 0.47633 17.5689C0.753931 17.8472 1.12373 18 1.51735 18C1.90973 18 2.27952 17.8472 2.55837 17.5692L9.02205 11.103L15.4369 17.518C15.7153 17.7952 16.0851 17.9482 16.4775 17.9482C16.8699 17.9482 17.2397 17.7954 17.5188 17.5174C18.0915 16.9436 18.0915 16.0094 17.5184 15.4356L11.1032 9.02059Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-role" viewBox="0 0 41 50" fill="none">
+            <path d="M9.62787 14.1947C9.71625 15.2295 9.9152 16.252 10.2214 17.2443C10.4746 17.8818 10.9149 18.4277 11.4842 18.8102C11.5915 19.4416 11.7115 19.9657 11.8377 20.4328C12.4691 22.7816 15.4934 27.4475 19.5279 27.5864H20.5508C24.7747 27.5422 27.8369 22.5353 28.4051 20.4328C28.5693 19.8393 28.6891 19.2395 28.765 18.8102C29.3474 18.4314 29.7994 17.8824 30.0592 17.2379C30.364 16.2477 30.5609 15.2275 30.6464 14.1947C30.7584 13.2953 30.6207 12.3821 30.2487 11.5555C30.9243 4.66718 28.0136 2.91194 27.0918 2.53943C26.8579 2.44838 26.6435 2.31335 26.4604 2.14174C23.7012 -0.522732 16.8256 -0.945703 13.6687 2.2743C13.4157 2.52916 13.1237 2.74228 12.8038 2.90568C12.0021 3.32249 9.45124 5.16607 10.0257 11.5556C9.65492 12.3826 9.51722 13.2953 9.62779 14.1947L9.62787 14.1947ZM11.4653 12.2058V12.206C11.5861 12.0473 11.6427 11.8488 11.6231 11.6503C11.1749 7.19279 12.3682 4.90715 13.5173 4.30734C13.9855 4.06256 14.4117 3.74499 14.78 3.36664C17.2677 0.841124 23.1584 1.15045 25.4314 3.28463V3.28443C25.7464 3.58511 26.1147 3.82494 26.5172 3.99162C26.9971 4.18729 29.3459 5.46894 28.6703 11.6376C28.6483 11.8353 28.7026 12.0339 28.8218 12.1932C29.0961 12.7842 29.1907 13.443 29.0933 14.0873C29.0195 14.9618 28.8588 15.8269 28.6134 16.6698C28.445 17.0853 28.1275 17.423 27.7232 17.6168C27.4865 17.729 27.321 17.9514 27.2811 18.2102C27.1864 18.8272 27.0577 19.4384 26.8962 20.0412C26.4163 21.8217 23.6698 26.0014 20.5824 26.033H19.6162C16.3646 25.9257 13.8454 21.7017 13.3908 20.0412C13.2324 19.438 13.106 18.8267 13.0121 18.2102C12.9705 17.9537 12.8051 17.7339 12.5702 17.623C12.1678 17.4316 11.8523 17.0958 11.6862 16.6823C11.4383 15.8357 11.2754 14.9663 11.2001 14.0873C11.1007 13.4477 11.1929 12.7931 11.4653 12.2059L11.4653 12.2058ZM31.8146 31.3176C31.0948 31.0208 29.7248 30.4967 29.7248 30.4967C29.0607 30.2147 28.4532 29.8148 27.9318 29.3161L26.669 28.2301C26.6551 28.1993 26.6304 28.1746 26.5996 28.1606C25.8609 28.1606 22.4198 31.3175 20.5762 31.3492H19.5913C17.7666 31.2861 14.3699 28.1481 13.6311 28.1481C13.5947 28.1454 13.5586 28.1568 13.53 28.1796L12.2672 29.3223C11.7464 29.8234 11.1387 30.2254 10.4742 30.5094C10.4742 30.5094 9.21146 31.0018 8.47896 31.2986C3.70579 33.2558 -1.76831 35.4846 0.548851 44.7722C1.76104 49.1099 15.7651 50 19.446 50H20.8602C24.5474 50 38.5388 49.116 39.7574 44.7722C42.0745 35.4847 36.6258 33.2559 31.8146 31.3176L31.8146 31.3176ZM19.9258 36.3686H20.3237L22.2178 43.8883C22.2408 44.0137 22.1861 44.1409 22.0789 44.2102L20.5321 45.4162C20.3116 45.5753 20.0139 45.5753 19.7934 45.4162L18.2086 44.1535C18.1048 44.0844 18.0526 43.9601 18.076 43.8378L19.9258 36.3686ZM20.1216 32.9277H20.6077C20.9195 32.9185 21.229 32.8718 21.5297 32.7888L20.8161 34.1336C20.707 34.4414 20.455 34.677 20.1405 34.7649C19.8252 34.676 19.5717 34.441 19.4586 34.1336L18.7894 32.8266C19.0313 32.8887 19.2787 32.9269 19.528 32.9403H20.1216L20.1216 32.9277ZM38.2359 44.362C37.9769 45.2079 35.906 46.5401 30.9498 47.4619C27.6139 48.0547 24.2356 48.3757 20.8477 48.4215H19.446C16.0583 48.3757 12.6797 48.0547 9.34394 47.4619C4.39383 46.5401 2.33565 45.2079 2.07678 44.362C0.106986 36.4319 4.26772 34.7271 9.09139 32.7509C9.78586 32.4669 11.0486 31.9806 11.0613 31.9742V31.9744C11.9217 31.6158 12.7074 31.0997 13.3785 30.4527L13.852 30.017L14.597 30.5284C15.2662 30.9955 15.8976 31.4187 16.4911 31.7911L18.0571 34.8469V34.8471C18.1796 35.089 18.33 35.3157 18.5053 35.5229L16.5543 43.4025C16.477 43.7492 16.4988 44.1107 16.6171 44.4455C16.7355 44.7805 16.9456 45.0755 17.2236 45.2966L18.8085 46.5594H18.8082C19.1938 46.8615 19.6696 47.0257 20.1594 47.0257C20.6494 47.0257 21.125 46.8615 21.5105 46.5594L23.0573 45.3533L23.0575 45.3535C23.3512 45.1315 23.574 44.8288 23.6986 44.4823C23.8229 44.1358 23.8437 43.7607 23.7584 43.4025L21.7695 35.5229C21.9399 35.3295 22.0883 35.1178 22.2114 34.8915L23.8529 31.7346C24.4212 31.3872 25.0209 30.9896 25.6523 30.5539L26.3909 30.0487L26.8519 30.4527H26.8521C27.5216 31.0891 28.3029 31.5965 29.1565 31.9492C29.1565 31.9492 30.5077 32.4733 31.2274 32.7636C36.0449 34.7272 40.2056 36.4255 38.2357 44.3621L38.2359 44.362Z"
+                  fill="currentColor"/>
+        </symbol>
+
+        <symbol id="svg-active-pass" viewBox="0 0 22 18" fill="none">
+            <path d="M10.819 0C16.211 0 20.697 3.88 21.638 9C20.698 14.12 16.211 18 10.819 18C5.427 18 0.941 14.12 0 9C0.94 3.88 5.427 0 10.819 0ZM10.819 16C12.8585 15.9996 14.8374 15.3068 16.4319 14.0352C18.0263 12.7635 19.1419 10.9883 19.596 9C19.1402 7.0133 18.0239 5.24 16.4296 3.97003C14.8353 2.70005 12.8573 2.00853 10.819 2.00853C8.7807 2.00853 6.80269 2.70005 5.20838 3.97003C3.61406 5.24 2.49777 7.0133 2.042 9C2.4961 10.9883 3.61167 12.7635 5.20614 14.0352C6.80061 15.3068 8.77953 15.9996 10.819 16ZM10.819 13.5C9.62553 13.5 8.48093 13.0259 7.63702 12.182C6.79311 11.3381 6.319 10.1935 6.319 9C6.319 7.80653 6.79311 6.66193 7.63702 5.81802C8.48093 4.97411 9.62553 4.5 10.819 4.5C12.0125 4.5 13.1571 4.97411 14.001 5.81802C14.8449 6.66193 15.319 7.80653 15.319 9C15.319 10.1935 14.8449 11.3381 14.001 12.182C13.1571 13.0259 12.0125 13.5 10.819 13.5ZM10.819 11.5C11.482 11.5 12.1179 11.2366 12.5868 10.7678C13.0556 10.2989 13.319 9.66304 13.319 9C13.319 8.33696 13.0556 7.70107 12.5868 7.23223C12.1179 6.76339 11.482 6.5 10.819 6.5C10.156 6.5 9.52007 6.76339 9.05123 7.23223C8.58239 7.70107 8.319 8.33696 8.319 9C8.319 9.66304 8.58239 10.2989 9.05123 10.7678C9.52007 11.2366 10.156 11.5 10.819 11.5Z"
+                  fill="#2B3674"/>
+        </symbol>
+
+        <symbol id="svg-open-pass" viewBox="0 0 22 22" fill="none">
+            <path d="M16.701 17.904C14.9422 19.0196 12.9017 19.6103 10.819 19.607C5.427 19.607 0.941 15.727 0 10.607C0.43003 8.27772 1.60163 6.1499 3.34 4.541L0.211 1.415L1.626 0L21.425 19.8L20.01 21.214L16.7 17.904H16.701ZM4.754 5.957C3.395 7.19259 2.44832 8.81578 2.042 10.607C2.35429 11.9735 2.98126 13.2481 3.873 14.3296C4.76474 15.411 5.89663 16.2694 7.17855 16.8363C8.46048 17.4032 9.85705 17.6631 11.2571 17.5951C12.6571 17.5272 14.022 17.1334 15.243 16.445L13.215 14.417C12.3517 14.9608 11.3292 15.1951 10.3152 15.0814C9.30128 14.9678 8.35604 14.5129 7.63457 13.7914C6.9131 13.07 6.45823 12.1247 6.34456 11.1108C6.2309 10.0968 6.46518 9.07431 7.009 8.211L4.754 5.957ZM11.733 12.935L8.491 9.693C8.31306 10.1459 8.27119 10.641 8.37051 11.1173C8.46982 11.5937 8.70602 12.0308 9.05012 12.3749C9.39422 12.719 9.83127 12.9552 10.3077 13.0545C10.784 13.1538 11.2791 13.1119 11.732 12.934L11.733 12.935ZM19.626 15.199L18.195 13.769C18.8635 12.8163 19.3394 11.7422 19.596 10.607C19.3242 9.41673 18.8133 8.29415 18.0941 7.30749C17.375 6.32084 16.4628 5.49073 15.4129 4.8676C14.363 4.24448 13.1973 3.84137 11.9867 3.68276C10.7762 3.52416 9.54601 3.61338 8.371 3.945L6.793 2.367C8.04 1.877 9.399 1.607 10.819 1.607C16.211 1.607 20.697 5.487 21.638 10.607C21.3316 12.2727 20.6429 13.8446 19.626 15.199ZM10.542 6.115C11.1785 6.07566 11.8161 6.17207 12.4125 6.39782C13.009 6.62357 13.5506 6.97351 14.0015 7.42445C14.4525 7.87539 14.8024 8.41703 15.0282 9.01346C15.2539 9.60989 15.3503 10.2475 15.311 10.884L10.541 6.115H10.542Z"
+                  fill="#A3AED0"/>
+        </symbol>
+
+
+    </svg>
+</div>
+<script src="js/vendor.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>
