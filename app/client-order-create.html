@@ -1,0 +1,228 @@
+<!--#set var="title" value="клиент Создание заявки" -->
+<!--#include virtual="/parts/header-client.html" -->
+
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-xl-10 col-lg-8">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__steps">
+                    <div class="col-lg-6 col-xl-4 d-flex align-items-center">
+                        <div class="application-stages__steps__current text-nowrap">1 этап</div>
+                        <div class="application-stages__steps__line2">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center">
+                        <div class="application-stages__steps__total text-nowrap">2 - 10 этапы</div>
+                        <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                            <svg width="20" height="20">
+                                <use xlink:href="#svg-info"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-lg-6 col-xl-4 d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Создание заявки</h1>
+                        <span class="btn btn-sm btn-border">Черновик</span>
+                    </div>
+                    <div class="col-lg-6 d-flex align-items-center application-stages__progress">
+                        <div class="application-stages__progress__label">
+                            До завершения процесса
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-success btn-sm dropdown-toggle" data-bs-toggle="dropdown"
+                                    aria-expanded="false">10 этапов
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">9 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">8 этапов</a></li>
+                                <li><a class="dropdown-item" href="#">7 этапов</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-2 col-lg-4">
+            <div class="d-flex align-items-center justify-content-end pt-0 pb-3 dashboard__card__form__caption">
+                Оцените нас
+                <button class="btn-info ms-2" data-bs-trigger="hover focus" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    <svg width="20" height="20">
+                        <use xlink:href="#svg-info"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="d-flex justify-content-end">
+                <button class="btn btn-reset d-inline-flex align-items-center">
+                    ОЦЕНИТЬ
+                    <svg width="9" height="14" class="ms-3">
+                        <use xlink:href="#svg-right"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+        <div class="card-body">
+            <form action="" class="dashboard__card__form">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 ">
+                        <div class="input-field">
+                            <input id="order" type="text" class="input-field__text" placeholder="№ заявки">
+                            <label for="order" class="input-field__label">№ заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Откуда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_from" type="text" class="input-field__text" placeholder="Страна откуда">
+                            <label for="country_from" class="input-field__label">Страна откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_from" type="text" class="input-field__text" placeholder="Валюта откуда">
+                            <label for="currency_from" class="input-field__label">Валюта откуда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_from" type="text" class="input-field__text" placeholder="Сумма откуда">
+                            <label for="amount_from" class="input-field__label">Сумма откуда</label>
+                        </div>
+                        <div class="input-field tpad20">
+                            <select class="input-field__select">
+                                <option value="">Автор</option>
+                                <option value="Автор2">Автор2</option>
+                                <option value="Автор3">Автор3</option>
+                            </select>
+                        </div>
+                        <div class="input-field tpad20">
+                            <textarea class="form-control input-field__textarea" placeholder="Комментарий"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 offset-xl-1 offset-0">
+                        <div class="input-field">
+                            <input id="date_order" type="text" class="input-field__text input-field__text--date"
+                                   placeholder="Дата  заявки">
+                            <label for="date_order" class="input-field__label">Дата заявки</label>
+                        </div>
+                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                            Куда сделать перевод?
+                            <button class="btn-info ms-2"
+                                    data-bs-trigger="hover focus"
+                                    data-bs-container="body"
+                                    data-bs-toggle="popover"
+                                    data-bs-placement="top"
+                                    data-bs-content="Top popover">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-info"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="input-field">
+                            <input id="country_to" type="text" class="input-field__text" placeholder="Страна куда"
+                                   value="Россия">
+                            <label for="country_to" class="input-field__label">Страна куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="currency_to" type="text" class="input-field__text" placeholder="Валюта куда"
+                                   value="Доллары (USD)">
+                            <label for="currency_to" class="input-field__label">Валюта куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="amount_to" type="text" class="input-field__text" placeholder="Сумма  куда"
+                                   value="10 000">
+                            <label for="amount_to" class="input-field__label">Сумма куда</label>
+                        </div>
+                        <div class="input-field">
+                            <input id="date_pay" type="text" class="input-field__text input-field__text--date"
+                                   placeholder="Дата платежа">
+                            <label for="date_pay" class="input-field__label">Дата платежа</label>
+                        </div>
+                        <div class="input-field tpad20">
+                            <select class="input-field__select">
+                                <option value="">Назначение платежа</option>
+                                <option value="Автор2">Автор2</option>
+                                <option value="Автор3">Автор3</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <div class="input-field__info">
+                                <input type="text" class="input-field__text placeholder-shown"
+                                       placeholder="Менеджер Ф. И. О" readonly>
+                                <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
+                                        data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                                    <svg width="20" height="20">
+                                        <use xlink:href="#svg-info"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="input-field__helper-text">
+                                назначится позже, когда заявка будет принята в работу
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 offset-xl-1 offset-0 tpad20">
+                        <div class="pb-5 mar-l20">
+                            <picture>
+                                <source srcset="images/dist/sb2.png, images/dist/sb2@2.png 2x">
+                                <img src="images/dist/sb2.png" width="197" height="120" alt="">
+                            </picture>
+                        </div>
+                        <div class="text">
+                            <p>В этом месте мы будем размещать советы<br>
+                                о том, что делать дальше клиенту</p>
+
+                            <p>Подсказывать ему какие могут быть вариант взаимодействий</p>
+
+                            <p>Давать советы по выбору условий</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="dashboard__main__body__footer-btns d-flex align-items-center">
+        <button class="btn btn-reset d-inline-flex align-items-center">
+            ОЧИСТИТЬ
+            <svg width="12" height="12" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-close"></use>
+            </svg>
+        </button>
+
+        <button class="btn btn-outline-success d-inline-flex align-items-center ms-auto me-4">
+            СОХРАНИТЬ
+            <svg width="16" height="12" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-save"></use>
+            </svg>
+        </button>
+        <button class="btn btn-success d-inline-flex align-items-center">
+            ОТПРАВИТЬ
+            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-right"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<!--#include virtual="/parts/footer.html" -->

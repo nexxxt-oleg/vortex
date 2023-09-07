@@ -72,6 +72,12 @@ body {
   }
 }
 
+.btn-primary .btn__ico-r,
+.btn-success .btn__ico-r {
+  opacity: 0.5;
+  color: #fff;
+}
+
 .btn {
   --bs-border-radius: 20px;
   --bs-btn-padding-x: 20px;
@@ -116,6 +122,7 @@ body {
 .btn-outline-success {
   --bs-btn-color: #219653;
   --bs-btn-border-color: #219653;
+  background: #fff;
 }
 
 .btn-light {
@@ -1455,4 +1462,90 @@ td {
 .btn-outline-primary {
   --bs-btn-color: #2F80ED;
   --bs-btn-border-color: #2F80ED;
+}
+
+.text {
+  p {
+    color: #000;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px; /* 150% */
+    margin-bottom: 20px;
+  }
+}
+.mar-l20 {
+  margin-left: -30px;
+}
+.application-stages__steps__line2 {
+  width: 80%;
+  height: 1px;
+  position: relative;
+  background: #A3AED0;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 5px solid #A3AED0;
+    border-bottom: 3px solid transparent;
+    top: 50%;
+    margin-top: -3px;
+    right: -4px;
+  }
+}
+.fpad20 {
+  padding-bottom: 20px;
+}
+.dashboard__card__res {
+  &__label {
+    display: block;
+    margin: 0;
+    color: #A3AED0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__value {
+    color: #2B3674;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__text {
+    color: #A3AED0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+  }
+}
+
+.btn.disabled {
+  background: #A3AED0;
+  color: #fff;
+  border-color:#A3AED0;
+}
+.nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+}
+.dashboard__card__doc-link {
+  display: block;
+  padding-left: 37px;
+  color: #1F4DC1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration-line: underline;
+  margin-bottom: 10px;
+  background-position: 0 7px;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M17 20H3C2.20435 20 1.44129 19.6839 0.87868 19.1213C0.316071 18.5587 0 17.7956 0 17V1C0 0.734784 0.105357 0.48043 0.292893 0.292893C0.48043 0.105357 0.734784 0 1 0H15C15.2652 0 15.5196 0.105357 15.7071 0.292893C15.8946 0.48043 16 0.734784 16 1V13H20V17C20 17.7956 19.6839 18.5587 19.1213 19.1213C18.5587 19.6839 17.7956 20 17 20ZM16 15V17C16 17.2652 16.1054 17.5196 16.2929 17.7071C16.4804 17.8946 16.7348 18 17 18C17.2652 18 17.5196 17.8946 17.7071 17.7071C17.8946 17.5196 18 17.2652 18 17V15H16ZM14 18V2H2V17C2 17.2652 2.10536 17.5196 2.29289 17.7071C2.48043 17.8946 2.73478 18 3 18H14ZM4 5H12V7H4V5ZM4 9H12V11H4V9ZM4 13H9V15H4V13Z' fill='%2309121F'/%3E%3C/svg%3E");
 }
