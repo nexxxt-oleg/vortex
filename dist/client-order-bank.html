@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
 
-    <title>клиент Создание заявки</title>
+    <title>клиент ПЛАТЕЖ ЧЕРЕЗ БАНК</title>
     <meta name="description" content="">
 
     <meta name="viewport"
@@ -247,13 +247,13 @@
         <div class="col-xl-10 col-lg-8">
             <div class="application-stages">
                 <div class="row align-items-center application-stages__steps">
-                    <div class="col-lg-6 col-xl-4 d-flex align-items-center">
-                        <div class="application-stages__steps__current text-nowrap">1 этап</div>
+                    <div class="col-lg-6 col-xl-6 d-flex align-items-center">
+                        <div class="application-stages__steps__current text-nowrap">13 этап</div>
                         <div class="application-stages__steps__line2">
                         </div>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center">
-                        <div class="application-stages__steps__total text-nowrap">2 - 10 этапы</div>
+                    <div class="col-lg-6 col-xl-6 d-flex align-items-center">
+                        <div class="application-stages__steps__total text-nowrap">13 15 этапы</div>
                         <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
                                 data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
                             <svg width="20" height="20">
@@ -263,7 +263,7 @@
                     </div>
                 </div>
                 <div class="row align-items-center application-stages__nav">
-                    <div class="col-lg-6 col-xl-4 d-flex align-items-center">
+                    <div class="col-lg-6 col-xl-6 d-flex align-items-center">
                         <div class="application-stages__nav__back d-flex align-items-center">
                             <a href="">
                                 <svg width="12" height="20">
@@ -271,16 +271,16 @@
                                 </svg>
                             </a>
                         </div>
-                        <h1 class="application-stages__title">Создание заявки</h1>
-                        <span class="btn btn-sm btn-border">Черновик</span>
+                        <h1 class="application-stages__title">Подтверждение проведения платежа</h1>
+                        <span class="btn btn-sm btn-border">Платежи исполнены</span>
                     </div>
-                    <div class="col-lg-6 d-flex align-items-center application-stages__progress">
+                    <div class="col-lg-6 col-xl-6 d-flex align-items-center application-stages__progress">
                         <div class="application-stages__progress__label">
                             До завершения процесса
                         </div>
                         <div class="dropdown">
                             <button class="btn btn-outline-success btn-sm dropdown-toggle" data-bs-toggle="dropdown"
-                                    aria-expanded="false">10 этапов
+                                    aria-expanded="false">2 этапа
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">9 этапов</a></li>
@@ -318,110 +318,87 @@
         <div class="card-body">
             <form action="" class="dashboard__card__form">
                 <div class="row">
-                    <div class="col-xl-3 col-lg-4 ">
-                        <div class="input-field">
-                            <input id="order" type="text" class="input-field__text" placeholder="№ заявки">
-                            <label for="order" class="input-field__label">№ заявки</label>
+                    <div class="col-lg-3 tpad20">
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">№ заявки</label>
+                            <div class="dashboard__card__res__value">542323424</div>
                         </div>
-                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                        <div class="d-flex align-items-center dashboard__card__form__caption pt-0">
                             Откуда сделать перевод?
-                            <button class="btn-info ms-2"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-container="body"
-                                    data-bs-toggle="popover"
-                                    data-bs-placement="top"
-                                    data-bs-content="Top popover">
+                            <button class="btn-info ms-2" data-bs-trigger="hover focus" data-bs-container="body"
+                                    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
                                 <svg width="20" height="20">
                                     <use xlink:href="#svg-info"></use>
                                 </svg>
                             </button>
                         </div>
-                        <div class="input-field">
-                            <input id="country_from" type="text" class="input-field__text" placeholder="Страна откуда">
-                            <label for="country_from" class="input-field__label">Страна откуда</label>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Страна откуда</label>
+                            <div class="dashboard__card__res__value">Россия</div>
                         </div>
-                        <div class="input-field">
-                            <input id="currency_from" type="text" class="input-field__text" placeholder="Валюта откуда">
-                            <label for="currency_from" class="input-field__label">Валюта откуда</label>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Валюта откуда</label>
+                            <div class="dashboard__card__res__value">Валюта откуда</div>
                         </div>
-                        <div class="input-field">
-                            <input id="amount_from" type="text" class="input-field__text" placeholder="Сумма откуда">
-                            <label for="amount_from" class="input-field__label">Сумма откуда</label>
-                        </div>
-                        <div class="input-field tpad20">
-                            <select class="input-field__select">
-                                <option value="">Автор</option>
-                                <option value="Автор2">Автор2</option>
-                                <option value="Автор3">Автор3</option>
-                            </select>
-                        </div>
-                        <div class="input-field tpad20">
-                            <textarea class="form-control input-field__textarea" placeholder="Комментарий"></textarea>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Сумма откуда</label>
+                            <div class="dashboard__card__res__value">10 000</div>
                         </div>
                     </div>
-                    <div class="col-xl-3 col-lg-4 offset-xl-1 offset-0">
-                        <div class="input-field">
-                            <input id="date_order" type="text" class="input-field__text input-field__text--date"
-                                   placeholder="Дата  заявки">
-                            <label for="date_order" class="input-field__label">Дата заявки</label>
+                    <div class="col-lg-3 tpad20">
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Дата заявки</label>
+                            <div class="dashboard__card__res__value">28.02.2023</div>
                         </div>
-                        <div class="d-flex align-items-center dashboard__card__form__caption">
+                        <div class="d-flex align-items-center dashboard__card__form__caption pt-0">
                             Куда сделать перевод?
-                            <button class="btn-info ms-2"
-                                    data-bs-trigger="hover focus"
-                                    data-bs-container="body"
-                                    data-bs-toggle="popover"
-                                    data-bs-placement="top"
-                                    data-bs-content="Top popover">
+                            <button class="btn-info ms-2" data-bs-trigger="hover focus" data-bs-container="body"
+                                    data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
                                 <svg width="20" height="20">
                                     <use xlink:href="#svg-info"></use>
                                 </svg>
                             </button>
                         </div>
-                        <div class="input-field">
-                            <input id="country_to" type="text" class="input-field__text" placeholder="Страна куда"
-                                   value="Россия">
-                            <label for="country_to" class="input-field__label">Страна куда</label>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Страна куда</label>
+                            <div class="dashboard__card__res__value">Россия</div>
                         </div>
-                        <div class="input-field">
-                            <input id="currency_to" type="text" class="input-field__text" placeholder="Валюта куда"
-                                   value="Доллары (USD)">
-                            <label for="currency_to" class="input-field__label">Валюта куда</label>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Валюта куда</label>
+                            <div class="dashboard__card__res__value">Валюта откуда</div>
                         </div>
-                        <div class="input-field">
-                            <input id="amount_to" type="text" class="input-field__text" placeholder="Сумма  куда"
-                                   value="10 000">
-                            <label for="amount_to" class="input-field__label">Сумма куда</label>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Сумма куда</label>
+                            <div class="dashboard__card__res__value">10 000</div>
                         </div>
-                        <div class="input-field">
-                            <input id="date_pay" type="text" class="input-field__text input-field__text--date"
-                                   placeholder="Дата платежа">
-                            <label for="date_pay" class="input-field__label">Дата платежа</label>
+                    </div>
+                    <div class="col-lg-3 tpad20">
+                        <div class="dashboard__card__res pb-3">
+                            <label class="dashboard__card__res__label">Желаемая дата платежа</label>
+                            <div class="dashboard__card__res__value">28.02.2023</div>
                         </div>
-                        <div class="input-field tpad20">
-                            <select class="input-field__select">
-                                <option value="">Назначение платежа</option>
-                                <option value="Автор2">Автор2</option>
-                                <option value="Автор3">Автор3</option>
-                            </select>
+                        <div class="dashboard__card__res pb-3">
+                            <label class="dashboard__card__res__label">Автор</label>
+                            <div class="dashboard__card__res__value">Иванов Иван Иванович</div>
                         </div>
-                        <div class="input-field">
-                            <div class="input-field__info">
-                                <input type="text" class="input-field__text placeholder-shown"
-                                       placeholder="Менеджер Ф. И. О" readonly>
-                                <button class="btn-info" data-bs-trigger="hover focus" data-bs-container="body"
-                                        data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
-                                    <svg width="20" height="20">
-                                        <use xlink:href="#svg-info"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="input-field__helper-text">
-                                назначится позже, когда заявка будет принята в работу
+                        <div class="dashboard__card__res pb-3">
+                            <label class="dashboard__card__res__label">Назначение платежа</label>
+                            <div class="dashboard__card__res__value">Оплата по договору №25 от 25.11.2023</div>
+                        </div>
+                        <div class="dashboard__card__res pb-4">
+                            <label class="dashboard__card__res__label">Менеджер Ф. И. О</label>
+                            <div class="dashboard__card__res__value">Иванов Иван Иванович</div>
+                        </div>
+                        <div class="dashboard__card__res">
+                            <label class="dashboard__card__res__label">Комментарий</label>
+                            <div class="dashboard__card__res__text">
+                                Как все круто прошло :) Обязательно буду
+                                обращаться к Vortex снова!
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 offset-xl-1 offset-0 tpad20">
+
+                    <div class="col-lg-3 offset-0 tpad20">
                         <div class="pb-5 mar-l20">
                             <picture>
                                 <source srcset="images/dist/sb2.png, images/dist/sb2@2.png 2x">
@@ -440,7 +417,421 @@
                 </div>
             </form>
         </div>
+        <ul class="nav nav-pills dashboard__card__tabs">
+            <li class="nav-item" role="presentation">
+                <a href="" class="nav-link text-uppercase">
+                    СОГЛАСОВАНИЕ
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link  text-uppercase active">
+                    ПЛАТЕЖ ЧЕРЕЗ БАНК
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link  text-uppercase ">
+                    КОНВЕРТАЦИИ
+                </a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a href="" class="nav-link text-uppercase ">
+                    Платеж назначения
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link  text-uppercase">
+                    История
+                </a>
+            </li>
+        </ul>
+        <table class="table table-hover table-borderless table-striped table-filter">
+            <thead>
+            <tr id="accordionFilter4">
 
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_1"
+                                aria-expanded="false">
+                            № п/ п
+                        </button>
+                        <div id="col1_1" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_1"
+                                            aria-expanded="false">
+                                        № п/ п
+                                    </button>
+                                    <span class="count">11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_2"
+                                aria-expanded="false">
+                            Вид платежа
+                        </button>
+                        <div id="col1_2" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_2"
+                                            aria-expanded="false">
+                                        Вид платежа
+                                    </button>
+                                    <span class="count">11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_3"
+                                aria-expanded="false">
+                            № платежа
+                        </button>
+                        <div id="col1_3" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_3"
+                                            aria-expanded="false">
+                                        № платежа
+                                    </button>
+                                    <span class="count">11</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_4"
+                                aria-expanded="false">
+                            Плательщик
+                        </button>
+                        <div id="col1_4" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_4"
+                                            aria-expanded="false">
+                                        Плательщик
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_5"
+                                aria-expanded="false">
+                            Дата<br>
+                            платежа
+                        </button>
+                        <div id="col1_5" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_5"
+                                            aria-expanded="false">
+                                        Дата<br>
+                                        платежа
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_6"
+                                aria-expanded="false">
+                            Сумма
+                        </button>
+                        <div id="col1_6" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter1">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_6"
+                                            aria-expanded="false">
+                                        Сумма
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_7"
+                                aria-expanded="false">
+                            Валюта
+                        </button>
+                        <div id="col1_7" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter1">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_7"
+                                            aria-expanded="false">
+                                        Валюта
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+                <td>
+                    Комментарий
+                </td>
+                <td>
+                    <div class="accordion-item table-filter__dropdown">
+                        <button class="dropdown-toggle collapsed"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#col1_8"
+                                aria-expanded="false">
+                            Вложения
+                        </button>
+                        <div id="col1_8" class="accordion-collapse collapse"
+                             data-bs-parent="#accordionFilter4">
+                            <div class="table-filter__dropdown__body">
+                                <div class="table-filter__dropdown__header d-flex align-items-center justify-content-between">
+                                    <button class="dropdown-toggle active"
+                                            data-bs-toggle="collapse"
+                                            data-bs-target="#col1_8"
+                                            aria-expanded="false">
+                                        Вложения
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width: 50px;" class="text-center">
+                    <a href="" class="ico-link active d-inline-flex">
+                        <svg width="24" height="16">
+                            <use xlink:href="#svg-orderby"></use>
+                        </svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+                <td></td>
+                <td>
+                    <div class="table-filter__col-order">
+                        <a href="" class="mb-2 d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-top"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="d-block">
+                            <svg width="10" height="6">
+                                <use xlink:href="#svg-bottom"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </td>
+
+                <td>
+
+                </td>
+            </tr>
+            </thead>
+            <tr>
+                <td>1</td>
+                <td>Платеж</td>
+                <td>125125</td>
+                <td>ООО Вихрь</td>
+                <td>30.01.2023</td>
+                <td>1</td>
+                <td>2</td>
+                <td>
+                    <div class="comment">
+                        Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
+                    </div>
+                </td>
+                <td>
+                    <a href="" class="td-file d-inline-flex align-items-center">
+                        2 файла
+                        <svg width="20" height="18" class="ms-3">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </a>
+                </td>
+                <td><a href=""
+                       class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                    <svg width="4" height="20">
+                        <use xlink:href="#svg-td-order"></use>
+                    </svg>
+                </a></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Платеж</td>
+                <td>125125</td>
+                <td>ООО Вихрь</td>
+                <td>30.01.2023</td>
+                <td>1</td>
+                <td>2</td>
+                <td>
+                    <div class="comment">
+                        Здесь может быть комметарий комметарий комметари йкомме тарийкомме тарий
+                    </div>
+                </td>
+                <td>
+                    <a href="" class="td-file d-inline-flex align-items-center">
+                        2 файла
+                        <svg width="20" height="18" class="ms-3">
+                            <use xlink:href="#svg-download"></use>
+                        </svg>
+                    </a>
+                </td>
+                <td><a href=""
+                       class="ico-link d-flex align-items-center justify-content-center table-filter__item-sort">
+                    <svg width="4" height="20">
+                        <use xlink:href="#svg-td-order"></use>
+                    </svg>
+                </a></td>
+            </tr>
+            <tbody>
+            </tbody>
+        </table>
+
+        <div class="dashboard__card__table-box__footer">
+
+        </div>
     </div>
 
     <div class="dashboard__main__body__footer-btns d-flex align-items-center">
@@ -457,7 +848,7 @@
                 <use xlink:href="#svg-save"></use>
             </svg>
         </button>
-        <button class="btn btn-success d-inline-flex align-items-center">
+        <button class="btn btn-success d-inline-flex align-items-center disabled" disabled>
             ОТПРАВИТЬ
             <svg width="9" height="14" class="ms-3 btn__ico-r">
                 <use xlink:href="#svg-right"></use>
