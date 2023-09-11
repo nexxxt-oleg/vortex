@@ -1592,5 +1592,50 @@ td {
   color: #2B3674;
 }
 
-
-
+.dashboard__card__list-doc {
+  padding: 0 0 20px 0;
+  margin: 0;
+  list-style-type: none;
+  counter-reset: num;
+}
+.dashboard__card__list-doc li {
+  position: relative;
+  padding: 0 0 10px 27px;
+}
+.dashboard__card__list-doc li::before {
+  content: counter(num) '.';
+  counter-increment: num;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.dashboard__card__list-doc__caption {
+  color: #000;
+  padding-right: 20px;
+  flex-grow: 1;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.dashboard__card__list-doc__item .td-file {
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  min-width: 80px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pright-85 {
+  padding-right: 85px;
+}
