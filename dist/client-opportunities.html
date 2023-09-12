@@ -1,3 +1,404 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>клиент Возможности / Доступность ресурса</title>
+    <meta name="description" content="">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="css/vendor.css">
+
+    <link rel="stylesheet" href="css/app.min.css">
+</head>
+<body>
+<div class="main">
+    <div class="d-flex dashboard">
+        <div class="sidebar dashboard__sidebar d-flex flex-column">
+            <div class="sidebar__header d-flex justify-content-center">
+                <img class="d-block" src="./images/dist/logo.svg" width="200" height="65" alt="">
+            </div>
+            <nav class="sidebar__body">
+                <ul class="nav flex-column sidebar__body__nav">
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-home"></use>
+                                </svg>
+                            </div>
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-payments"></use>
+                                </svg>
+                            </div>
+                            Биржа
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center active">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="22">
+                                    <use xlink:href="#svg-nav-application"></use>
+                                </svg>
+                            </div>
+                            Заявки
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-translations"></use>
+                                </svg>
+                            </div>
+                            Платежи
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-refunds"></use>
+                                </svg>
+                            </div>
+                            Переводы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center ">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-company"></use>
+                                </svg>
+                            </div>
+                            Возвраты
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="18" height="20">
+                                    <use xlink:href="#svg-nav-doc"></use>
+                                </svg>
+                            </div>
+                            Компании
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="svg-nav-doc" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-ico2"></use>
+                                </svg>
+                            </div>
+                            Документы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-opportunities"></use>
+                                </svg>
+                            </div>
+                            Условия работы
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="18">
+                                    <use xlink:href="#svg-nav-rating"></use>
+                                </svg>
+                            </div>
+                            Возможности
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-analytics"></use>
+                                </svg>
+                            </div>
+                            Рейтинг
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link d-flex align-items-center">
+                            <div class="sidebar__body__nav__ico">
+                                <svg width="20" height="20">
+                                    <use xlink:href="#svg-nav-opportunities"></use>
+                                </svg>
+                            </div>
+                            Сотрудники
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="sidebar__informer mt-auto">
+                <div class="sidebar__informer__inner">
+                    <div class="sidebar__informer__img">
+                        <picture>
+                            <source srcset="images/dist/sb1.png, images/dist/sb1@2.png 2x">
+                            <img src="images/dist/sb1.png" width="170" height="100" alt="">
+                        </picture>
+                    </div>
+                    <div class="sidebar__informer__caption">Реферальная программа</div>
+                    <div class="sidebar__informer__description">Приведи друга и<br>
+                        получите денег вместе</div>
+                    <a href="" class="btn sidebar__informer__link">ПОДРОБНЕЕ</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard__main flex-grow-1">
+            <header class="dashboard__header">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 d-flex align-items-center">
+                        <div class="d-flex dashboard__user">
+                            <div class="dashboard__user__ava">
+                                <svg width="40" height="40">
+                                    <use xlink:href="#svg-ava-user"></use>
+                                </svg>
+                            </div>
+                            <div class="dashboard__user__desc">
+                                <div class="dashboard__user__position">Клиент</div>
+                                <div class="dashboard__user__name">Иванов Александр</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex align-items-center">
+                        <div class="d-flex dashboard__user me-5">
+                            <div class="dashboard__user__ava">
+                                <img width="50" height="50" src="./images/dist/user1.jpg" alt="">
+                            </div>
+                            <div class="dashboard__user__desc">
+                                <div class="dashboard__user__position">Мой менеджер</div>
+                                <div class="dashboard__user__name">Иванов Александр</div>
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary d-inline-flex align-items-center me-2">
+                            ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                                <use xlink:href="#svg-right"></use>
+                            </svg>
+                        </a>
+                        <a href="" class="btn btn-success d-inline-flex align-items-center ms-auto">
+                            СОЗДАТЬ ЗАЯВКУ
+                            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                                <use xlink:href="#svg-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="col-lg-2 d-flex align-items-center d-flex align-items-center">
+
+                        <ul class="nav ms-auto align-items-center dashboard__header__nav">
+                            <li>
+                                <a href="">
+                                    <svg width="27" height="32">
+                                        <use xlink:href="#svg-options"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="active">
+                                    <span class="badge rounded-pill bg-success dashboard__header__count-event">2</span>
+                                    <svg width="26" height="30" >
+                                        <use xlink:href="#svg-event"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg width="27" height="30" >
+                                        <use xlink:href="#svg-exit"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+
+
+
+<div class="dashboard__main__top">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="application-stages">
+                <div class="row align-items-center application-stages__nav">
+                    <div class="col-12 d-flex align-items-center">
+                        <div class="application-stages__nav__back d-flex align-items-center">
+                            <a href="">
+                                <svg width="12" height="20">
+                                    <use xlink:href="#svg-back"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <h1 class="application-stages__title">Возможности / Доступность ресурса</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center justify-content-end">
+            <div class="d-flex align-items-center pt-0 pb-0 me-3 dashboard__card__form__caption">
+
+                Оцените нас
+                <button class="btn-info ms-2" data-bs-trigger="hover focus" data-bs-container="body"
+                        data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Top popover">
+                    <svg width="20" height="20">
+                        <use xlink:href="#svg-info"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <button class="btn btn-reset d-inline-flex align-items-center">
+                ОЦЕНИТЬ
+                <svg width="9" height="14" class="ms-3">
+                    <use xlink:href="#svg-right"></use>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+</div>
+<div class="dashboard__main__body">
+    <div class="card dashboard__card">
+        <div class="card-body">
+            <form action="" class="dashboard__card__form">
+                <div class="row">
+                    <div class="col-lg-3 tpad20">
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">id организации</label>
+                            <div class="dashboard__card__res__value">542323424</div>
+                        </div>
+
+                        <div class="fpad20 dashboard__card__res ">
+                            <label class="dashboard__card__res__label">Мой профиль</label>
+                            <div class="dashboard__card__res__value">ООО Вортекс</div>
+                        </div>
+
+
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Вид профиля</label>
+                            <div class="dashboard__card__res__value">Клиент</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Наименование</label>
+                            <div class="dashboard__card__res__value">Сентябрь-декабрь 2023 еженедельно</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 tpad20">
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Сумма</label>
+                            <div class="dashboard__card__res__value">10.000.000</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Валюта</label>
+                            <div class="dashboard__card__res__value">Доллары (USD)</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Страна</label>
+                            <div class="dashboard__card__res__value">Россия</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Комиссия / Дисконт</label>
+                            <div class="dashboard__card__res__value">1,5%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 tpad20">
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Частота</label>
+                            <div class="dashboard__card__res__value">Еженедельно</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Статус</label>
+                            <div class="dashboard__card__res__value">
+                                <span class="color-green">Активен</span>
+                            </div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Дата</label>
+                            <div class="dashboard__card__res__value">21.01.2023</div>
+                        </div>
+                        <div class="fpad20 dashboard__card__res">
+                            <label class="dashboard__card__res__label">Комментарий</label>
+                            <div class="dashboard__card__res__text">
+                                Как все круто прошло :) Обязательно буду
+                                обращаться к Vortex снова!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 offset-0 tpad20">
+                        <div class="pb-5 mar-l20">
+                            <picture>
+                                <source srcset="images/dist/sb2.png, images/dist/sb2@2.png 2x">
+                                <img src="images/dist/sb2.png" width="197" height="120" alt="">
+                            </picture>
+                        </div>
+                        <div class="text">
+                            <p>В этом месте мы будем размещать советы<br>
+                                о том, что делать дальше клиенту</p>
+
+                            <p>Подсказывать ему какие могут быть вариант взаимодействий</p>
+
+                            <p>Давать советы по выбору условий</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="dashboard__main__body__footer-btns d-flex align-items-center">
+        <button class="btn btn-reset d-inline-flex align-items-center">
+            ОЧИСТИТЬ
+            <svg width="12" height="12" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-close"></use>
+            </svg>
+        </button>
+
+        <button class="btn btn-outline-success d-inline-flex align-items-center ms-auto me-4">
+            СОХРАНИТЬ
+            <svg width="16" height="12" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-save"></use>
+            </svg>
+        </button>
+        <button class="btn btn-success d-inline-flex align-items-center disabled" disabled>
+            ОТПРАВИТЬ
+            <svg width="9" height="14" class="ms-3 btn__ico-r">
+                <use xlink:href="#svg-right"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+        </div> <!-- dashboard__main-->
+    </div><!-- dashboard-->
+
+</div><!-- end main-->
 <div style="display: none">
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
@@ -248,3 +649,8 @@
 
     </svg>
 </div>
+<script src="js/vendor.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

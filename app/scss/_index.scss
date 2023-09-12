@@ -1509,6 +1509,9 @@ td {
     font-style: normal;
     font-weight: 500;
     line-height: 24px;
+    &.fs-14 {
+      font-size: 14px;
+    }
   }
   &__value {
     color: #2B3674;
@@ -1638,4 +1641,30 @@ td {
 }
 .pright-85 {
   padding-right: 85px;
+}
+
+.form-check--active-green {
+  .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+    background-color: #19BB77;
+  }
+  .form-check-label {
+    color: #19BB77;
+  }
+}
+
+.fs-18 {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.table-filter tbody tr.tr-selected > td {
+    background-color: rgba(33, 150, 83, 0.1);
+}
+.rating-td__value.rating-td__value--left {
+  padding-left: 0;
+  padding-right: 5px;
+  &.fs-18 {
+    font-size: 18px;
+  }
 }
